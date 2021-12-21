@@ -410,7 +410,7 @@ def group_recommender(steam_ids_list):
 main
 '''
 
-api_key = '443EE200F8889091D47FA9F6AF615A4B'
+
 
 steam_ids_list = ['76561197984384656', '76561197969025704', '76561197984169843', '76561198096102722']
 
