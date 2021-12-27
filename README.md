@@ -6,4 +6,4 @@ A collection of data science python utilities for analyzing data from the video 
 ## Features
 __build_tag_percentile_data(api_key, steam_ids_list)__
 * returns __tag_data__, __percentiles_data__, and __aggregation_data__
-* * __tag_data__ - 
+ * __tag_data__ - 
