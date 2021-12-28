@@ -21,3 +21,7 @@ __get_appid_tags(appid)__
 
 __get_users_games(api_key, steam_id)__
 * Get a user's list of games, playtime data, and other info from the IPlayerService and dump it into a pandas dataframe.
+
+__get_playtime_percentiles_for_app(appid)__
+* For a given steam app, gently scrape the howlongis.io site for the app's playtime quartile data. 
+
