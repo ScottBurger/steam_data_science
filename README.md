@@ -27,6 +27,8 @@ __get_users_games(api_key, steam_id)__
 __get_playtime_percentiles_for_app(appid)__
 * For a given steam app, gently scrape the howlongis.io site for the app's playtime quartile data. 
 
+__wishlist_analyzer(wishlist)__
+* Takes in a wishlist dictionary from the steam page source code and returns a pandas dataframe with review scores, recommended magnitude rank (lower is better), and indie game category levels (lower is more indie).
 
 ## Example Usage
 
