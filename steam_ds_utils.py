@@ -1,15 +1,5 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-this script is the function collection zone
-
-new script:
-    get games for user
-    get playtime percentiels for each game
-    get fan rating for each game
-    apply attribution for each games tag distribution
-    aggregate attribution scores by tag
-"""
 
 
 import pandas as pd
@@ -21,8 +11,15 @@ import numpy as np
 
 
 
+global_sleep_timer = 2  # number of seconds to sleep between scraping rounds for various things
+
+
 
 def get_users_games(api_key, steam_id):
+    '''
+    Get a users playtime stats per app via the steam api
+    '''
+    
     s = requests.Session()
     games_response = s.get('http://api.steampowered.com/IPlayerService/GetOwnedGames/v0001/?key={}&steamid={}&format=json&include_played_free_games=1&include_appinfo=1'.format(api_key, steam_id))
     games_json = games_response.content
@@ -44,6 +41,9 @@ def get_playtime_percentiles_for_app(appid):
     from the thousands mark then convert back to int so we can use it for numerical analysis later
     '''  
     # print("getting playtime stats for app {}, {}/{}".format(games_df['appid'][i], i, len(games_df)))
+    
+    # appid = 420
+    
     URL = "https://howlongis.io/app/{}".format(appid)
     page = requests.get(URL)
     soup = BeautifulSoup(page.text, "html.parser")
@@ -83,7 +83,7 @@ def get_playtime_percentiles_for_app(appid):
                 "p75": pmin75,
                 "p90": pmin90
                 }
-        # time.sleep(5) # so we dont overload the website and get blocked
+
     except:
         pass
 
@@ -95,6 +95,18 @@ def get_playtime_percentiles_for_app(appid):
 
 
 def compute_fan_rating2(row):
+    '''
+    For a given playtime percentile for an app and a users
+    total playtime in minutes, calculate where on the distribution
+    the user would lie. 
+    
+    Theres some nuance here about predicting percentiles based on
+    a curve fit, so instead of letting the values go lower than 0
+    or higher than 100, the values are capped between them. There
+    could be an argument made for negatives here, but well put that
+    in the theory pile for now...
+    '''
+    
     p10 = row['p10']
     p25 = row['p25']
     median = row['median']
@@ -131,7 +143,11 @@ def compute_fan_rating2(row):
 
 
 def get_appid_tags(appid):
-    appid = 10
+    '''
+    Scrapes an appids store page for the embedded tag data.
+    No idea why steam doesnt have an official api for this...
+    '''
+    # appid = 10
     # thank you! https://stackoverflow.com/questions/22829309/missing-source-page-information-using-urllib2
     # Create session
     session = requests.session()
@@ -240,6 +256,11 @@ def get_all_steam_tags():
     
     
 def game_tag_scorer(appid, model_output):
+    '''
+    Takes in an appid and a specific fingerprint engagement
+    model type, then returns the appid and that value applied 
+    across the tags
+    '''
     # appid = '582010'
     # model_output = agg_final_final[['name','attr_linear_sum']]
     model_output.rename(columns={ model_output.columns[1]: "model_value" }, inplace = True)
@@ -255,22 +276,16 @@ def game_tag_scorer(appid, model_output):
 
 
 
-def game_similarity(appid, type='prop'):
-    '''
-    take an appid
-    parse through tag database file
-    for each lookup compute a cosine similarity
-    save appid and cosine value
-    return list of appids and cosines sorted descending
-
-    two types: match based on proportion
-    match based on unique tags all up
-    '''
-
 
 
 
 def build_tag_percentile_data(api_key, steam_ids_list):
+    '''
+    Takes in an api key and a list of steam ids, returns out the 
+    tag data, playtime percentiles data, and the fingerprint of 
+    engagement scores for the steam ids provided
+    '''    
+
     
     user_list_data = pd.DataFrame()
     for i in steam_ids_list:
@@ -283,7 +298,10 @@ def build_tag_percentile_data(api_key, steam_ids_list):
     
     percentiles_data = pd.DataFrame()
     tag_data = pd.DataFrame()
-    for i in range(0,len(unique_games)):
+    # for i in range(0,len(unique_games)):
+    for i in range(0,5):
+        
+        # i = 0
         
         print('scraping playtime percentile data for appid {}, {}/{}'.format(unique_games[i], i, len(unique_games)))
         try:
@@ -300,11 +318,11 @@ def build_tag_percentile_data(api_key, steam_ids_list):
             tag_data = tag_data.append(temp_tags)
         except:
             print('couldnt find tag data, skipping')   #sometimes apps get soft-removed and therefore cant be scraped
-        time.sleep(5)
+        time.sleep(global_sleep_timer)
         
     #interim save step just in case
-    percentiles_data.to_csv('percentiles_data.csv'.format(steam_ids_list), index=False)
-    tag_data.to_csv('tag_data.csv'.format(steam_ids_list), index=False)
+    # percentiles_data.to_csv('percentiles_data.csv'.format(steam_ids_list), index=False)
+    # tag_data.to_csv('tag_data.csv'.format(steam_ids_list), index=False)
         
     # join tag data onto games df
     merge_data = pd.merge(nonzero_user_data, percentiles_data, how='inner', on='appid')
@@ -315,6 +333,8 @@ def build_tag_percentile_data(api_key, steam_ids_list):
                 
     # attribution models using fan rating through percentiles data
     '''
+    break this part out into a separate function?
+    
     for computing across multiple users, does it make more sense to aggregate
     the playtimes first across the group then use that aggregation for a fan rating?
     the goal is to find something that appeals to everyone. summing, like averaging, 
@@ -395,41 +415,112 @@ def refresh_tag_data(app_id_list):
     
     
     
-def group_recommender(steam_ids_list):
+def wishlist_analyzer(wishlist):
     '''
-    takes a list of steam user ids
-    gets their fan data
-    applies that fan data through an attribution model to tags
-    aggregates the tag scores
-    hunts through all steam tag data to find the top 25 games to play together
+    Given a users wishlist data, dump out a pandas dataframe that 
+    includes a ranking based on both positivity of reviews and
+    number of reviews.
+    
+    Steam recently made all wishlist data private, so you have to 
+    manually dump it from page source off the g_rgWishlistData variable.
+    An example would be like: var g_rgWishlistData = 
+    [{"appid":80,"priority":0,"added":1639364367},
+     {"appid":34010,"priority":45,"added":1539439975},...]
+    Just copy paste the data between the []s. 
     '''
     
+    # extract the appids only, dont care about the priority or when added for the moment
+    wishlist_apps = []
+    for i in range(0,len(wishlist)):
+        #i=0
+        appid = wishlist[i]['appid']
+        wishlist_apps.append(appid)
     
-
+    
+    wishlist_data = pd.DataFrame()
+    s = requests.Session()
+    for i in range(0,len(wishlist_apps)):
+        
+        # i=3
+        try:
+            print("getting review data for {}, {}/{}".format(wishlist_apps[i], i, len(wishlist_apps)))
+            response = s.get('https://store.steampowered.com/appreviews/{}?json=1&language=all&purchase_type=all'.format(wishlist_apps[i]))
+            results = {
+                "appid": str(wishlist_apps[i]),
+                "positive_reviews": response.json()['query_summary']['total_positive'],
+                "negative_reviews": response.json()['query_summary']['total_negative']
+                }
+            wishlist_data = wishlist_data.append(results, ignore_index = True)
+            time.sleep(global_sleep_timer)
+        except:
+            print("couldnt find data, skipping...")
+    
+    wishlist_data['total_reviews'] = wishlist_data['positive_reviews'] + wishlist_data['negative_reviews']
+    wishlist_data['percent_positive'] = wishlist_data['positive_reviews'] / wishlist_data['total_reviews']
+    wishlist_data['percent_rank'] = wishlist_data['percent_positive'].rank(ascending=False)
+    wishlist_data['volume_rank'] = wishlist_data['total_reviews'].rank(ascending=False)
+    wishlist_data['magnitude_rank'] = (wishlist_data['percent_rank']**2 + wishlist_data['volume_rank']**2)**(1/2)
+    
+    
+    '''
+    an interesting second level cut of the data here
+    would be to bin the total reviews by rounded log values
+    then filter each bin to games over 90%, then take the top 5
+    this would be a way to get some good input from indies that
+    are high quality but might be missed by the magnitude sort
+    '''
+    wishlist_data['indie_rank'] = round(np.log(wishlist_data['total_reviews']))
+    
+    '''
+    steam also doesnt seem to have an api for providing an appid
+    and getting an appname as a result, which seems odd and annoying.
+    here i have to get the full list of appids on steam, then convert
+    to a df, then join the wishlist data off this big df of steamids
+    '''
+    s = requests.Session()
+    games_response = s.get('https://api.steampowered.com/ISteamApps/GetAppList/v2/?json=1')
+    games_json = games_response.content
+    json_load = json.loads(games_json)
+    games_df = pd.DataFrame.from_dict(json_load['applist']['apps'])
+    
+    games_df['appid'] = games_df['appid'].astype(str)
+    wishlist_merge = wishlist_data.merge(games_df, on='appid', how='left')
+    wishlist_merge.drop_duplicates(inplace=True)
+    
+    return wishlist_merge
+    
+    
+    
+    
+    
+    
 '''
-main
-'''
+examples
 
 
 
-steam_ids_list = ['76561197984384656', '76561197969025704', '76561197984169843', '76561198096102722']
+# build a fingerprint attribution model for a user or list of users
+api_key = '44...A4B'
+steam_ids_list = ['76561197969025704']
+# steam_ids_list = ['76561197984384656', '76561197969025704', '76561197984169843', '76561198096102722']
+tag_data, percentiles_data, agg_data = build_tag_percentile_data(api_key, steam_ids_list)
 
 
-tag_data, percentiles_data, agg_final_final = build_tag_percentile_data(api_key, steam_ids_list)
+# score a game! 
+game_tag_scorer('427520', agg_data[['name','attr_prop_sum']])
 
 # score a list of games!
 candidates_list = ['505460','632360','361420','548430']
 candidates_data = []
 for i in candidates_list:
-    candidates_data.append(game_tag_scorer(i, agg_final_final[['name','attr_linear_sum']]))
-    
+    candidates_data.append(game_tag_scorer(i, agg_data[['name','attr_linear_sum']]))
 sorted(candidates_data, key=lambda tup: tup[1],reverse=True)
 
 
+# wishlist example
+wishlist = {"appid":80,"priority":0,"added":1639364367},{"appid":34010,"priority":45,"added":1539439975},{"appid":91700,"priority":0,"added":1613247718}
+wishlist_analysis = wishlist_analyzer(wishlist)
 
-game_tag_scorer('427520', agg_final_final[['name','attr_prop_sum']])
-
-
-
+'''
 
 
