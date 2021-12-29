@@ -27,3 +27,13 @@ __get_users_games(api_key, steam_id)__
 __get_playtime_percentiles_for_app(appid)__
 * For a given steam app, gently scrape the howlongis.io site for the app's playtime quartile data. 
 
+
+## Example Usage
+
+This example will give us a dump of all tag data, all playtime percentiles, and a user's engagement score fingerprint for various models. It can be extended to multiple users by adding additional steam ids to the list:
+
+```
+api_key = '443E...A4B'
+steam_ids_list = ['76561197969025704']
+tag_data, percentiles_data, agg_data = build_tag_percentile_data(api_key, steam_ids_list)
+```
