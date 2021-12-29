@@ -39,3 +39,14 @@ tag_data, percentiles_data, agg_data = build_tag_percentile_data(api_key, steam_
 ```
 
 Each crawl of the data is defaulted to 5 seconds to avoid over-loading any systems, so a data update of 200 games will take about 16 minutes.
+
+
+This example block will score a list of games for potential engagement based on the fingerprint data you've developed:
+
+```
+candidates_list = ['505460','632360','361420','548430']
+candidates_data = []
+for i in candidates_list:
+    candidates_data.append(game_tag_scorer(i, agg_data[['name','attr_linear_sum']]))
+sorted(candidates_data, key=lambda tup: tup[1],reverse=True)
+```
