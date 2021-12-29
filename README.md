@@ -37,3 +37,5 @@ api_key = '443E...A4B'
 steam_ids_list = ['76561197969025704']
 tag_data, percentiles_data, agg_data = build_tag_percentile_data(api_key, steam_ids_list)
 ```
+
+Each crawl of the data is defaulted to 5 seconds to avoid over-loading any systems, so a data update of 200 games will take about 16 minutes.
