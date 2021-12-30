@@ -368,7 +368,7 @@ def build_tag_percentile_data(api_key, steam_ids_list):
     agg_final = agg_final.merge(agg_meds, how='left', on='name')
     agg_final_final = agg_final[['name','attr_prop_sum','attr_linear_sum','attr_prop_avg','attr_linear_avg', 'attr_prop_med','attr_linear_med']]
     
-    return tag_data, percentiles_data, agg_final_final
+    return tag_data, percentiles_data, agg_final_final, merge_data
 
         
     
@@ -500,7 +500,7 @@ examples
 api_key = '44...A4B'
 steam_ids_list = ['76561197969025704']
 # steam_ids_list = ['76561197984384656', '76561197969025704', '76561197984169843', '76561198096102722']
-tag_data, percentiles_data, agg_data = build_tag_percentile_data(api_key, steam_ids_list)
+tag_data, percentiles_data, agg_data, fan_data = build_tag_percentile_data(api_key, steam_ids_list)
 
 
 # score a game! 
