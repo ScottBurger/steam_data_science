@@ -2,8 +2,10 @@
 A collection of data science python utilities for analyzing data from the video game platform Steam.
 
 ## Getting Started
-You'll need two things here to start analyzing data: [a Steam API key from here](https://steamcommunity.com/dev/apikey) and a [user's steam64 id, which can be found here]( https://steamid.xyz/).  Otherwise, for a given user's steam profile page, if you inspect the page source, you can find your 17 digit steam id key by searching for "g_rgProfileData". An example would look like: g_rgProfileData = {"url":"https:\/\/steamcommunity.com\/profiles\/**765611________**
-
+You'll need two things here to start analyzing data: [a Steam API key from here](https://steamcommunity.com/dev/apikey) and a [user's steam64 id, which can be found here]( https://steamid.xyz/).  Otherwise, for a given user's steam profile page, if you inspect the page source, you can find your 17 digit steam id key by searching for "g_rgProfileData". An example would look like: 
+```
+g_rgProfileData = {"url":"https:\/\/steamcommunity.com\/profiles\/**765611________**
+```
 
 ## Features
 __build_tag_percentile_data(api_key, steam_ids_list)__
