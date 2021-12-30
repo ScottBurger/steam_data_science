@@ -298,8 +298,8 @@ def build_tag_percentile_data(api_key, steam_ids_list):
     
     percentiles_data = pd.DataFrame()
     tag_data = pd.DataFrame()
-    # for i in range(0,len(unique_games)):
-    for i in range(0,5):
+    for i in range(0,len(unique_games)):
+    # for i in range(0,5):
         
         # i = 0
         
