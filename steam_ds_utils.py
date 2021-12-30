@@ -213,7 +213,7 @@ def get_review_data(appid):
 
 
     
-def attribtion_modeller(appid, user, fan_rating):
+def attribtion_modeller(appid, user, fan_rating, tag_data):
     '''
     two types of attribution here. proportional applies fan rating across
     the tag proportions. linear gives each tag that fan rating.
@@ -350,13 +350,10 @@ def build_tag_percentile_data(api_key, steam_ids_list):
     tag_attributions = pd.DataFrame()
     for i in unique_games:
         for j in steam_ids_list:
-            try:
-                fan_rating_subset = merge_data[(merge_data['user'] == j) & (merge_data['appid']==i)]['fan_fix'].values[0]
-                attr_df = attribtion_modeller(i, j, fan_rating_subset)
-                tag_attributions = tag_attributions.append(attr_df)
-            except:
-                pass
-    
+            fan_rating_subset = merge_data[(merge_data['user'] == j) & (merge_data['appid']==i)]['fan_fix'].values[0]
+            attr_df = attribtion_modeller(i, j, fan_rating_subset, tag_data)
+            tag_attributions = tag_attributions.append(attr_df)
+
     # aggregate the attributed tag score data
     '''
     tag, sum_linear, avg_linear, med_linear, sum_prop, avg_prop, med_prop
