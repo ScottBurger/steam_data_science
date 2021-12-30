@@ -488,7 +488,101 @@ def wishlist_analyzer(wishlist):
     
     
     
+def data_manager(appid, data_type):
+    '''
+    update offline file storage for tag, percentile, review data, date scraped
     
+    if an appid doesnt exist in the file already, scrape it and add to file
+    if any of the data is more than 365 days old, re-scrape it
+    
+    given an appid and a data_type, go in to the appropriate file and 
+    see if the appid is in there. if it exists, return it. if not, scrape
+    and store the data for faster offline analysis.
+    
+    tag file, percentiles file, review file
+    '''
+    
+    if data_type == 'tag':
+        # check if data file exists, if not, create one
+        try:
+            tag_data = pd.read_csv("tag_data.csv")
+        except:
+            print("no tag data found, creating storage file")
+            col_names = ['tagid','name','count','browseable','appid']
+            tag_data = pd.DataFrame(columns = col_names)
+            tag_data.to_csv("tag_data.csv", index=False)
+            
+        tag_subset = tag_data[tag_data['appid'] == appid]
+        
+        if len(tag_subset) < 1:
+            print('no tag data stored for appid {}, scraping it now'.format(appid))
+            try:
+                tag_temp = get_appid_tags(appid)
+                time.sleep(2)
+                tag_temp_df = pd.DataFrame(tag_temp)
+                tag_temp_df['appid'] = appid
+                tag_data = tag_data.append(tag_temp_df)
+                tag_data.to_csv("tag_data.csv", index=False)
+                tag_subset = tag_temp_df
+            except:
+                print("couldnt find tag data for appid {}".format(appid))
+            
+        return tag_subset
+            
+
+    elif data_type == 'percentile':
+        # check if data file exists, if not, create one
+        try:
+            percentile_data = pd.read_csv("percentile_data.csv")
+        except:
+            print("no percentile data found, creating storage file")
+            col_names = ['appid','p10','p25','median','p75', 'p90']
+            percentile_data = pd.DataFrame(columns = col_names)
+            percentile_data.to_csv("percentile_data.csv", index=False)
+            
+        percentile_subset = percentile_data[percentile_data['appid'] == appid]
+        
+        if len(percentile_subset) < 1:
+            print('no percentile data stored for appid {}, scraping it now'.format(appid))
+            try:
+                per_temp = get_playtime_percentiles_for_app(appid)
+                time.sleep(2)
+                per_temp_df = pd.DataFrame(per_temp,index=([0]))
+                per_temp_df['appid'] = appid
+                per_data = percentile_data.append(per_temp_df)
+                per_data.to_csv("percentile_data.csv", index=False)
+                percentile_subset = per_temp_df
+            except:
+                print("couldnt find tag data for appid {}".format(appid))
+            
+        return percentile_subset
+    
+    elif data_type == 'review':
+        # check if data file exists, if not, create one
+        try:
+            review_data = pd.read_csv("review_data.csv")
+        except:
+            print("no review data found, creating storage file")
+            col_names = ['appid','positive_reviews','negative_reviews']
+            review_data = pd.DataFrame(columns = col_names)
+            review_data.to_csv("review_data.csv", index=False)
+            
+        review_subset = review_data[review_data['appid'] == appid]
+        
+        if len(review_subset) < 1:
+            print('no review data stored for appid {}, scraping it now'.format(appid))
+            try:
+                rev_temp = get_review_data(appid)
+                time.sleep(2)
+                rev_temp_df = pd.DataFrame(rev_temp,index=([0]))
+                rev_temp_df['appid'] = appid
+                rev_data = review_data.append(rev_temp_df)
+                rev_data.to_csv("review_data.csv", index=False)
+                review_subset = rev_temp_df
+            except:
+                print("couldnt find review data for appid {}".format(appid))
+            
+        return review_subset
     
     
 '''
