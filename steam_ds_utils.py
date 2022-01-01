@@ -585,6 +585,71 @@ def data_manager(appid, data_type):
         return review_subset
     
     
+    
+    
+    
+
+
+def build_user_profile(api_key, steam_ids_list):
+    '''
+    Takes a user id and returns the nonzero playtime games
+    along with playtime percentiles, review data, and fan scores
+    '''    
+
+    
+    user_list_data = pd.DataFrame()
+    for i in steam_ids_list:
+        temp_data = pd.DataFrame(get_users_games(api_key, i))
+        user_list_data = user_list_data.append(temp_data)
+        
+    nonzero_user_data = user_list_data[user_list_data['playtime_forever'] > 0]
+    unique_games = nonzero_user_data['appid'].unique()
+    
+    
+    percentiles_data = pd.DataFrame()
+    review_data = pd.DataFrame()
+    for i in range(0,len(unique_games)):
+    
+        # i = 0
+        
+        print('getting playtime percentile data for appid {}, {}/{}'.format(unique_games[i], i, len(unique_games)))
+        try:
+            percentiles_temp = data_manager(unique_games[i], 'percentile')
+            percentiles_data = percentiles_data.append(percentiles_temp)
+        except:
+            print("couldnt get percentile data, skipping")
+        
+        print('getting tag data for appid {}, {}/{}'.format(unique_games[i], i, len(unique_games)))
+        try:
+            data_manager(unique_games[i], 'tag')
+        except:
+            print('couldnt get tag data, skipping')   #sometimes apps get soft-removed and therefore cant be scraped
+        
+        print('getting review data for appid {}, {}/{}'.format(unique_games[i], i, len(unique_games)))
+        try:
+            review_temp = data_manager(unique_games[i], 'review')
+            review_data = review_data.append(review_temp)
+        except:
+            print('couldnt get review data, skipping')
+        
+        
+   
+        
+    # join tag data onto games df
+    merge_data = pd.merge(nonzero_user_data, percentiles_data, how='inner', on='appid')
+    merge_data = pd.merge(merge_data, review_data, how='inner', on='appid')
+    merge_data['total_reviews'] = merge_data['positive_reviews'] + merge_data['negative_reviews']
+    
+    # compute fan rating per game
+    merge_data['fan_rating'] = merge_data.apply(compute_fan_rating2, axis=1)
+    merge_data['fan_fix'] = merge_data['fan_rating'].apply(lambda x: 0 if x<0 else (100 if x >100 else x)) # caps at 0-100 values
+                
+    # attribution models using fan rating through percentiles data
+    
+    return merge_data
+
+    
+    
 '''
 examples
 
