@@ -8,11 +8,8 @@ g_rgProfileData = {"url":"https:\/\/steamcommunity.com\/profiles\/**765611______
 ```
 
 ## Features
-__build_tag_percentile_data(api_key, steam_ids_list)__
-* returns __tag_data__, __percentiles_data__, and __aggregation_data__
-  * __tag_data__ - A dataframe of tagid, name, count, appid, proportion
-  * __percentiles_data__ - A dataframe of appid, p10, p25, median, p75, p90 percentile playtimes in minutes
-  * __aggregation_data__ - A fingerprint dataframe of each user's tag name, and various attribution models like proportional, linear, average, median, etc.
+__build_user_profile(api_key, steam_ids_list)__
+* Returns a dataframe of a user's (or list of users) games, those games playtime percentiles, and the user's computed "fan rating" engagement score relative to the rest of the population for that game.
 
 __compute_fan_rating(data)__
 * For a given game and its quartiles of playtime data, check the user's playtime against the distribution and compute what percentile the user is compared to the rest of the game's playing population.
