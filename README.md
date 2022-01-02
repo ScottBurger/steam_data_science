@@ -39,10 +39,10 @@ This example will give us a dump of all tag data, all playtime percentiles, and 
 ```
 api_key = '443E...A4B'
 steam_ids_list = ['76561197969025704']
-tag_data, percentiles_data, agg_data = build_tag_percentile_data(api_key, steam_ids_list)
+user1 = build_user_profile(api_key, steam_ids_list)
 ```
 
-Each crawl of the data is defaulted to 2 seconds to avoid over-loading any systems, so a data update of 200 games will take about 7 minutes.
+If no data for an appid is found, the data is scraped and stored locally to avoid re-scraping for future analyses. Each scrape happens simultaneously so if an appid doesn't  have tag, percentile, or review data, all of them are acquired simultaneously but on a 2 second cooldown. So if you have 200 apps that aren't in the file already, it will take about 7 minutes to fully process, but each subsequent re-run will be much faster.
 
 This example line will score an individual game for predicted engagement based on the figerprint data you've developed:
 
