@@ -14,6 +14,9 @@ __build_user_profile(api_key, steam_ids_list)__
 __compute_fan_rating(data)__
 * For a given game and its quartiles of playtime data, check the user's playtime against the distribution and compute what percentile the user is compared to the rest of the game's playing population.
 
+__data_manager(appid, data_type)__
+* For a given app and data type like "percentile", "review", or "tag", check against the offline files to see if that data is already stored. If not, retrieve it for faster offline processing.
+
 __get_review_data(appid)__
 * For a given steam app, get its positive and negative review counts for all languages and purchase types.
 
