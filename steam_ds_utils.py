@@ -11,10 +11,6 @@ import numpy as np
 
 
 
-global_sleep_timer = 2  # number of seconds to sleep between scraping rounds for various things
-
-
-
 def get_users_games(api_key, steam_id):
     '''
     Get a users playtime stats per app via the steam api
