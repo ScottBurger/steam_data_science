@@ -218,11 +218,8 @@ def attribtion_modeller(appid, user, fan_rating, tag_data):
     two types of attribution here. proportional applies fan rating across
     the tag proportions. linear gives each tag that fan rating.
     '''
-    # appid = merge_data['appid'][10]
-    # user = merge_data['user'][10]
-    # fan_rating = merge_data['fan_rating'][10]
-    
     app_tag_data = tag_data[tag_data['appid']==appid]
+    app_tag_data['proportion'] = (app_tag_data['count']/ app_tag_data['count'].sum())
     app_tag_data['user'] = user
     app_tag_data['attr_prop'] = fan_rating * app_tag_data['proportion']  
     app_tag_data['attr_linear'] = fan_rating / len(app_tag_data)
@@ -655,15 +652,17 @@ examples
 
 
 
-# build a fingerprint attribution model for a user or list of users
+# build a user's profile of data based on playtime statistics
 api_key = '44...A4B'
 steam_ids_list = ['76561197969025704']
 # steam_ids_list = ['76561197984384656', '76561197969025704', '76561197984169843', '76561198096102722']
-tag_data, percentiles_data, agg_data, fan_data = build_tag_percentile_data(api_key, steam_ids_list)
+user1 = build_user_profile(api_key, steam_ids_list)
 
+# generate an attribution fingerprint for a user's played tags
+user1_fingerprint = compute_profile_fingerprint(user1)
 
 # score a game! 
-game_tag_scorer('427520', agg_data[['name','attr_prop_sum']])
+game_tag_scorer('824600', user1_fingerprint[['name','attr_prop_sum']])
 
 # score a list of games!
 candidates_list = ['505460','632360','361420','548430']
