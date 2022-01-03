@@ -258,15 +258,15 @@ def game_tag_scorer(appid, model_output):
     model type, then returns the appid and that value applied 
     across the tags
     '''
-    # appid = '582010'
-    # model_output = agg_final_final[['name','attr_linear_sum']]
     model_output.rename(columns={ model_output.columns[1]: "model_value" }, inplace = True)
-    
-    app_tag_info = pd.DataFrame(get_appid_tags(appid))
+    app_tag_info = data_manager(appid, 'tag')
     app_tag_info['proportion'] = app_tag_info['count']/sum(app_tag_info['count'])
     
     app_tag_info_merge = app_tag_info.merge(model_output, how='left', on='name')
+    app_tag_info_merge['proportion'] = app_tag_info_merge['count'] / (app_tag_info_merge['count'].sum())
+    app_tag_info_merge['model_value'] = app_tag_info_merge['model_value'].fillna(0)
     app_tag_info_merge['product'] = app_tag_info_merge['proportion'] * app_tag_info_merge['model_value']
+
 
     return (appid, round(sum(app_tag_info_merge['product']),4))
 
@@ -668,7 +668,7 @@ game_tag_scorer('824600', user1_fingerprint[['name','attr_prop_sum']])
 candidates_list = ['505460','632360','361420','548430']
 candidates_data = []
 for i in candidates_list:
-    candidates_data.append(game_tag_scorer(i, agg_data[['name','attr_linear_sum']]))
+    candidates_data.append(game_tag_scorer(i, user1_fingerprint[['name','attr_prop_sum']]))
 sorted(candidates_data, key=lambda tup: tup[1],reverse=True)
 
 
