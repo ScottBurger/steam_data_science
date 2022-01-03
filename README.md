@@ -34,7 +34,7 @@ __wishlist_analyzer(wishlist)__
 
 ## Example Usage
 
-This example will give us a dump of all tag data, all playtime percentiles, and a user's engagement score fingerprint for various models. It can be extended to multiple users by adding additional steam ids to the list:
+This example will generate [a user profile of engagement data based on individual total playtime of apps in minutes](https://svburger.com/2022/01/02/steam-data-science-user-engagement-profiles/). It can be extended to multiple users by adding additional steam ids to the list:
 
 ```
 api_key = '443E...A4B'
@@ -44,10 +44,15 @@ user1 = build_user_profile(api_key, steam_ids_list)
 
 If no data for an appid is found, the data is scraped and stored locally to avoid re-scraping for future analyses. Each scrape happens simultaneously so if an appid doesn't  have tag, percentile, or review data, all of them are acquired simultaneously but on a 2 second cooldown. So if you have 200 apps that aren't in the file already, it will take about 7 minutes to fully process, but each subsequent re-run will be much faster.
 
-This example line will score an individual game for predicted engagement based on the figerprint data you've developed:
-
+This example will generate an attirubtion model fingerprint based on the user profile you've developed:
 ```
-game_tag_scorer('427520', agg_data[['name','attr_prop_sum']])
+user1_fingerprint = compute_profile_fingerprint(user1)
+```
+
+
+This example line will score an individual game for predicted engagement based on the figerprint data you've developed:
+```
+game_tag_scorer('427520', user1_fingerprint[['name','attr_prop_sum']])
 ```
 
 
@@ -57,6 +62,6 @@ This example block will score a list of games for potential engagement based on 
 candidates_list = ['505460','632360','361420','548430']
 candidates_data = []
 for i in candidates_list:
-    candidates_data.append(game_tag_scorer(i, agg_data[['name','attr_linear_sum']]))
+    candidates_data.append(game_tag_scorer(i, user1_fingerprint[['name','attr_prop_sum']]))
 sorted(candidates_data, key=lambda tup: tup[1],reverse=True)
 ```
