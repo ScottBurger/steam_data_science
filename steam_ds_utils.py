@@ -641,6 +641,53 @@ def build_user_profile(api_key, steam_ids_list):
     
     return merge_data
 
+
+def compute_profile_fingerprint(user_profile):
+    '''
+    break this part out into a separate function?
+    
+    for computing across multiple users, does it make more sense to aggregate
+    the playtimes first across the group then use that aggregation for a fan rating?
+    the goal is to find something that appeals to everyone. summing, like averaging, 
+    would skew positively towards outliers. so if a group of 10 no one plays planetside
+    but one person puts a thousand hours in, the system will bias towards that. it probably
+    makes more sense to use a median? then for the group use that median playtime to
+    calculate a percentile group score. or maybe not?
+    
+    or do we just apply attributions then average/median/sum those attributions at the 
+    tag level? 
+    '''
+    # user_profile = user1
+    
+    unique_games = list(set(user_profile['appid']))
+    steam_ids_list = list(set(user_profile['user']))
+    tag_data = pd.read_csv('tag_data.csv')
+    
+    tag_attributions = pd.DataFrame()
+    for i in unique_games:
+        for j in steam_ids_list:
+            # i=unique_games[0]
+            # j=steam_ids_list[0]
+            fan_rating_subset = user_profile[(user_profile['user'] == j) & (user_profile['appid']==i)]['fan_fix'].values[0]
+            attr_df = attribtion_modeller(i, j, fan_rating_subset, tag_data)
+            tag_attributions = tag_attributions.append(attr_df)
+
+    # aggregate the attributed tag score data
+    '''
+    tag, sum_linear, avg_linear, med_linear, sum_prop, avg_prop, med_prop
+    '''
+    agg_sums = tag_attributions.groupby(['name']).sum().reset_index()
+    agg_avgs = tag_attributions.groupby(['name']).mean().reset_index()
+    agg_meds = tag_attributions.groupby(['name']).median().reset_index()
+    agg_sums.rename(columns={'attr_prop':'attr_prop_sum', 'attr_linear':'attr_linear_sum'},inplace=True)
+    agg_avgs.rename(columns={'attr_prop':'attr_prop_avg', 'attr_linear':'attr_linear_avg'},inplace=True)
+    agg_meds.rename(columns={'attr_prop':'attr_prop_med', 'attr_linear':'attr_linear_med'},inplace=True)
+    agg_final = agg_sums.merge(agg_avgs, how='left', on='name')
+    agg_final = agg_final.merge(agg_meds, how='left', on='name')
+    agg_final_final = agg_final[['name','attr_prop_sum','attr_linear_sum','attr_prop_avg','attr_linear_avg', 'attr_prop_med','attr_linear_med']]
+    
+    return agg_final_final
+    
     
     
 '''
