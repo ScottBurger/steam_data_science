@@ -214,6 +214,16 @@ def attribtion_modeller(appid, user, fan_rating, tag_data):
     two types of attribution here. proportional applies fan rating across
     the tag proportions. linear gives each tag that fan rating.
     '''
+     dummytags = {
+        'tagid':000000,
+        'name':'dummytag',
+        'count':1,
+        'browseable':True,
+        'appid':000000,
+        }
+    while len(app_tag_data) < 20:
+        app_tag_data = app_tag_data.append(dummytags,ignore_index=True)
+        
     app_tag_data = tag_data[tag_data['appid']==appid]
     app_tag_data['proportion'] = (app_tag_data['count']/ app_tag_data['count'].sum())
     app_tag_data['user'] = user
@@ -267,101 +277,6 @@ def game_tag_scorer(appid, model_output):
     return (appid, round(sum(app_tag_info_merge['product']),4))
 
 
-
-
-
-
-
-def build_tag_percentile_data(api_key, steam_ids_list):
-    '''
-    Takes in an api key and a list of steam ids, returns out the 
-    tag data, playtime percentiles data, and the fingerprint of 
-    engagement scores for the steam ids provided
-    '''    
-
-    
-    user_list_data = pd.DataFrame()
-    for i in steam_ids_list:
-        temp_data = pd.DataFrame(get_users_games(api_key, i))
-        user_list_data = user_list_data.append(temp_data)
-        
-    nonzero_user_data = user_list_data[user_list_data['playtime_forever'] > 0]
-    unique_games = nonzero_user_data['appid'].unique()
-    
-    
-    percentiles_data = pd.DataFrame()
-    tag_data = pd.DataFrame()
-    for i in range(0,len(unique_games)):
-    # for i in range(0,5):
-        
-        # i = 0
-        
-        print('scraping playtime percentile data for appid {}, {}/{}'.format(unique_games[i], i, len(unique_games)))
-        try:
-            temp_percentiles = pd.DataFrame(get_playtime_percentiles_for_app(unique_games[i]),index=([0]))
-            percentiles_data = percentiles_data.append(temp_percentiles)
-        except:
-            print("couldnt find percentile data, skipping")
-        
-        print('scraping tag data for appid {}, {}/{}'.format(unique_games[i], i, len(unique_games)))
-        try:
-            temp_tags = pd.DataFrame(get_appid_tags(unique_games[i]))
-            temp_tags['appid'] = unique_games[i]
-            temp_tags['proportion'] = temp_tags['count']/sum(temp_tags['count'])
-            tag_data = tag_data.append(temp_tags)
-        except:
-            print('couldnt find tag data, skipping')   #sometimes apps get soft-removed and therefore cant be scraped
-        time.sleep(global_sleep_timer)
-        
-    #interim save step just in case
-    # percentiles_data.to_csv('percentiles_data.csv'.format(steam_ids_list), index=False)
-    # tag_data.to_csv('tag_data.csv'.format(steam_ids_list), index=False)
-        
-    # join tag data onto games df
-    merge_data = pd.merge(nonzero_user_data, percentiles_data, how='inner', on='appid')
-    
-    # compute fan rating per game
-    merge_data['fan_rating'] = merge_data.apply(compute_fan_rating2, axis=1)
-    merge_data['fan_fix'] = merge_data['fan_rating'].apply(lambda x: 0 if x<0 else (100 if x >100 else x))
-                
-    # attribution models using fan rating through percentiles data
-    '''
-    break this part out into a separate function?
-    
-    for computing across multiple users, does it make more sense to aggregate
-    the playtimes first across the group then use that aggregation for a fan rating?
-    the goal is to find something that appeals to everyone. summing, like averaging, 
-    would skew positively towards outliers. so if a group of 10 no one plays planetside
-    but one person puts a thousand hours in, the system will bias towards that. it probably
-    makes more sense to use a median? then for the group use that median playtime to
-    calculate a percentile group score. or maybe not?
-    
-    or do we just apply attributions then average/median/sum those attributions at the 
-    tag level? 
-    '''
-    
-    tag_attributions = pd.DataFrame()
-    for i in unique_games:
-        for j in steam_ids_list:
-            fan_rating_subset = merge_data[(merge_data['user'] == j) & (merge_data['appid']==i)]['fan_fix'].values[0]
-            attr_df = attribtion_modeller(i, j, fan_rating_subset, tag_data)
-            tag_attributions = tag_attributions.append(attr_df)
-
-    # aggregate the attributed tag score data
-    '''
-    tag, sum_linear, avg_linear, med_linear, sum_prop, avg_prop, med_prop
-    '''
-    agg_sums = tag_attributions.groupby(['name']).sum().reset_index()
-    agg_avgs = tag_attributions.groupby(['name']).mean().reset_index()
-    agg_meds = tag_attributions.groupby(['name']).median().reset_index()
-    agg_sums.rename(columns={'attr_prop':'attr_prop_sum', 'attr_linear':'attr_linear_sum'},inplace=True)
-    agg_avgs.rename(columns={'attr_prop':'attr_prop_avg', 'attr_linear':'attr_linear_avg'},inplace=True)
-    agg_meds.rename(columns={'attr_prop':'attr_prop_med', 'attr_linear':'attr_linear_med'},inplace=True)
-    agg_final = agg_sums.merge(agg_avgs, how='left', on='name')
-    agg_final = agg_final.merge(agg_meds, how='left', on='name')
-    agg_final_final = agg_final[['name','attr_prop_sum','attr_linear_sum','attr_prop_avg','attr_linear_avg', 'attr_prop_med','attr_linear_med']]
-    
-    return tag_data, percentiles_data, agg_final_final, merge_data
 
         
     
