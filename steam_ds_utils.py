@@ -214,14 +214,15 @@ def attribtion_modeller(appid, user, fan_rating, tag_data):
     two types of attribution here. proportional applies fan rating across
     the tag proportions. linear gives each tag that fan rating.
     '''
-     dummytags = {
+    app_tag_data = pd.DataFrame()
+    dummytags = {
         'tagid':000000,
         'name':'dummytag',
         'count':1,
         'browseable':True,
         'appid':000000,
         }
-    while len(app_tag_data) < 20:
+    while len(tag_data) < 20:
         app_tag_data = app_tag_data.append(dummytags,ignore_index=True)
         
     app_tag_data = tag_data[tag_data['appid']==appid]
