@@ -357,7 +357,7 @@ def wishlist_analyzer(wishlist):
                 "negative_reviews": response.json()['query_summary']['total_negative']
                 }
             wishlist_data = wishlist_data.append(results, ignore_index = True)
-            time.sleep(global_sleep_timer)
+            time.sleep(2)
         except:
             print("couldnt find data, skipping...")
     
@@ -606,6 +606,37 @@ def compute_profile_fingerprint(user_profile):
     
     
     
+
+def dot(A,B): 
+    '''
+    dot product definition
+    kudos to https://stackoverflow.com/questions/18424228/cosine-similarity-between-2-number-lists
+    '''
+    return (sum(a*b for a,b in zip(A,B)))
+
+
+# def cosine_similarity(a,b):
+#     return dot(a,b) / ( (dot(a,a) **.5) * (dot(b,b) ** .5) )
+
+
+
+def cosine_simil(appid1,appid2):
+    '''
+    takes in appid1 and appid2 and records tag data for each
+    then computes a cosine similarity between 1 and 2
+    closer to 1 is more similar
+    '''
+    # appid1 = 1253920   # rogue legacy 2
+    # appid2 = 1443430   # 1980 rogue
+    
+    app1_tags = pd.DataFrame(get_appid_tags(appid1))
+    app2_tags = pd.DataFrame(get_appid_tags(appid2))
+    tags_values = app1_tags.merge(app2_tags,on="name",how='outer').fillna(0)
+    a = tags_values['count_x']
+    b = tags_values['count_y']
+    return dot(a,b) / ( (dot(a,a) **.5) * (dot(b,b) ** .5) )
+    
+    
 '''
 examples
 
@@ -635,6 +666,10 @@ sorted(candidates_data, key=lambda tup: tup[1],reverse=True)
 wishlist = {"appid":80,"priority":0,"added":1639364367},{"appid":34010,"priority":45,"added":1539439975},{"appid":91700,"priority":0,"added":1613247718}
 wishlist_analysis = wishlist_analyzer(wishlist)
 
+
+
+# how similar is this game to another?
+cosine_simil(1443430,811320)
 '''
 
 
