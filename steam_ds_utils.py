@@ -635,6 +635,51 @@ def cosine_simil(appid1,appid2):
     a = tags_values['count_x']
     b = tags_values['count_y']
     return dot(a,b) / ( (dot(a,a) **.5) * (dot(b,b) ** .5) )
+
+
+
+
+def get_playtime_percentiles_from_steam(appid,results):
+    '''
+    for a given appid and specified number of sample reviews,
+    go to the steam review api and pull the data
+    go to the next page, pull the data, etc
+    until the result set has [results] number of data points
+    then compute playtime percentiles
+    
+    still need to figure out cursor errors here though...
+    
+    if the cursor repeats, kill the loop
+    '''
+    
+    # appid = 1245620
+    # results = 250
+    start_cursor = '*'
+    reviews_data = pd.DataFrame()
+    while len(reviews_data) <= results:          
+        print('processing appid {}, cursor {}, results {}/{}'.format(appid, start_cursor, len(reviews_data), results))
+        s = requests.Session()
+        reviews_response = s.get('https://store.steampowered.com/appreviews/{}?json=1&filter=all&day_range=365&num_per_page=100&cursor={}'.format(appid,start_cursor))
+        
+        reviews_json = reviews_response.content
+        json_load = json.loads(reviews_json)
+        next_cursor = json_load['cursor']
+        reveiws_df = pd.DataFrame.from_dict(json_load['reviews'])
+        authors = reveiws_df['author'].apply(pd.Series)
+        
+        reviews_data = reviews_data.append(authors, ignore_index=True).drop_duplicates()
+        
+        if start_cursor != next_cursor:
+            start_cursor = next_cursor
+        else:
+            print('no new cursor found, exiting data grab')
+            break
+        
+        time.sleep(2)
+                
+    final_percentiles = pd.DataFrame(reviews_data['playtime_forever'].quantile([.1, .25, .5, .75, .9])/60)
+
+    return final_percentiles
     
     
 '''
