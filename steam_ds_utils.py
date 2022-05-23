@@ -11,6 +11,8 @@ import numpy as np
 
 
 
+
+
 def get_users_games(api_key, steam_id):
     '''
     Get a users playtime stats per app via the steam api
@@ -31,6 +33,10 @@ def get_users_games(api_key, steam_id):
 
 def get_playtime_percentiles_for_app(appid):
     '''
+    2022-05-06 note: this can be deprecated in favor of get_playtime_percentiles_from_steam(appid,results):
+    howlongis.io doesnt seem to be updating any longer and any time we can get away
+    from web scraping, the better IMO
+    
     probably an eaiser way to do this but this hunts for all the percentile[x] containers
     of which there are a few, returns the first one since we dont care about the dupes,
     converts it to a string, then we pop the string on the h delimeter, remove any commas
@@ -192,6 +198,9 @@ def get_appid_tags(appid):
 
 def get_review_data(appid):
     '''
+    2022-05-06 note: this might also be deprecated in favor of a similar data
+    pull for the get_playtime_percentiles_from_steam(appid,results): function
+    
     review data pull
     for a given appid, get its review data
     '''
@@ -213,8 +222,20 @@ def attribtion_modeller(appid, user, fan_rating, tag_data):
     '''
     two types of attribution here. proportional applies fan rating across
     the tag proportions. linear gives each tag that fan rating.
+    '''    
+    # appid = i
+    # user = j
+    # fan_rating = fan_rating_subset
+    app_tag_data = tag_data[tag_data['appid']==appid]
+    
     '''
-    app_tag_data = pd.DataFrame()
+    block to add dummy tags for games with less than 20 tags
+    add up to as many so the total length is 20
+    then do proportions. later well remove the dummy tags
+    from the analysis, which should clean up some of the over
+    indexing on games with fewer tags in their distribution.
+    '''
+    
     dummytags = {
         'tagid':000000,
         'name':'dummytag',
@@ -222,14 +243,14 @@ def attribtion_modeller(appid, user, fan_rating, tag_data):
         'browseable':True,
         'appid':000000,
         }
-    while len(tag_data) < 20:
+    while len(app_tag_data) < 20:
         app_tag_data = app_tag_data.append(dummytags,ignore_index=True)
-        
-    app_tag_data = tag_data[tag_data['appid']==appid]
+    
     app_tag_data['proportion'] = (app_tag_data['count']/ app_tag_data['count'].sum())
     app_tag_data['user'] = user
     app_tag_data['attr_prop'] = fan_rating * app_tag_data['proportion']  
     app_tag_data['attr_linear'] = fan_rating / len(app_tag_data)
+    app_tag_data['attr_fixed'] = fan_rating / 20
           
     return app_tag_data
         
@@ -264,9 +285,30 @@ def game_tag_scorer(appid, model_output):
     Takes in an appid and a specific fingerprint engagement
     model type, then returns the appid and that value applied 
     across the tags
+    
+    seems like theres as much attribution work to be done here as
+    with the modelling procedure. do we apply the tag scores proprotionally?
+    how about for games with 2 tags? linear proportions? sums? avgs???
     '''
+    # appid = 654910    # nan for 346110???   # over-indexed for yankais peak 654910
+    # model_output = user1_fingerprint[['name','attr_prop_sum']]
     model_output.rename(columns={ model_output.columns[1]: "model_value" }, inplace = True)
+    
+    #app_tag_info = pd.DataFrame(get_appid_tags(appid))
     app_tag_info = data_manager(appid, 'tag')
+    
+    dummytags = {
+        'tagid':000000,
+        'name':'dummytag',
+        'count':1,
+        'browseable':True,
+        'appid':000000,
+        }
+    while len(app_tag_info) < 20:
+        app_tag_info = app_tag_info.append(dummytags,ignore_index=True)
+    
+    
+    
     app_tag_info['proportion'] = app_tag_info['count']/sum(app_tag_info['count'])
     
     app_tag_info_merge = app_tag_info.merge(model_output, how='left', on='name')
@@ -274,9 +316,7 @@ def game_tag_scorer(appid, model_output):
     app_tag_info_merge['model_value'] = app_tag_info_merge['model_value'].fillna(0)
     app_tag_info_merge['product'] = app_tag_info_merge['proportion'] * app_tag_info_merge['model_value']
 
-
     return (appid, round(sum(app_tag_info_merge['product']),4))
-
 
 
         
@@ -409,7 +449,23 @@ def data_manager(appid, data_type):
     and store the data for faster offline analysis.
     
     tag file, percentiles file, review file
+    
+    
+    *** possible bug here: if a string of an appid is passed, the data
+    manager wont find it in the csv, but will append the tags correctly
+    so you could accidentally return the same data a bunch of times...
     '''
+    
+    '''
+    2022-05-21 todo:
+        if you want multiple things updated,
+        it should run in parallel instead of
+        series to go faster. ie: get tag and
+        review data at the same time instead
+        of waiting for one then the next
+    '''
+    
+    appid = int(appid) #should fix string issue
     
     if data_type == 'tag':
         # check if data file exists, if not, create one
@@ -462,7 +518,7 @@ def data_manager(appid, data_type):
                 per_data.to_csv("percentile_data.csv", index=False)
                 percentile_subset = per_temp_df
             except:
-                print("couldnt find tag data for appid {}".format(appid))
+                print("couldnt find percentiles data for appid {}".format(appid))
             
         return percentile_subset
     
@@ -492,6 +548,33 @@ def data_manager(appid, data_type):
                 print("couldnt find review data for appid {}".format(appid))
             
         return review_subset
+    
+    elif data_type == 'details':
+        # check if data file exists, if not, create one
+        try:
+            details_data = pd.read_csv("details_data.csv")
+        except:
+            print("no details data found, creating storage file")
+            col_names = ['appid','name','release_date']
+            details_data = pd.DataFrame(columns = col_names)
+            details_data.to_csv("details_data.csv", index=False)
+            
+        details_subset = details_data[details_data['appid'] == appid]
+        
+        if len(details_subset) < 1:
+            print('no details data stored for appid {}, scraping it now'.format(appid))
+            try:
+                det_temp = get_appid_details(appid)
+                time.sleep(2)
+                det_temp_df = pd.DataFrame(det_temp,index=([0]))
+                det_temp_df['appid'] = appid
+                det_data = details_data.append(det_temp_df)
+                det_data.to_csv("details_data.csv", index=False)
+                details_subset = det_temp_df
+            except:
+                print("couldnt find details data for appid {}".format(appid))
+            
+        return details_subset
     
     
     
@@ -558,6 +641,8 @@ def build_user_profile(api_key, steam_ids_list):
     return merge_data
 
 
+
+
 def compute_profile_fingerprint(user_profile):
     '''
     break this part out into a separate function?
@@ -573,7 +658,7 @@ def compute_profile_fingerprint(user_profile):
     or do we just apply attributions then average/median/sum those attributions at the 
     tag level? 
     '''
-    # user_profile = user1
+    # user_profile = sseagal_test
     
     unique_games = list(set(user_profile['appid']))
     steam_ids_list = list(set(user_profile['user']))
@@ -582,7 +667,7 @@ def compute_profile_fingerprint(user_profile):
     tag_attributions = pd.DataFrame()
     for i in unique_games:
         for j in steam_ids_list:
-            # i=unique_games[0]
+            # i=unique_games[1]
             # j=steam_ids_list[0]
             fan_rating_subset = user_profile[(user_profile['user'] == j) & (user_profile['appid']==i)]['fan_fix'].values[0]
             attr_df = attribtion_modeller(i, j, fan_rating_subset, tag_data)
@@ -681,6 +766,144 @@ def get_playtime_percentiles_from_steam(appid,results):
 
     return final_percentiles
     
+    
+    
+    
+
+def get_appid_details(appid):
+    '''
+    pulls almost all info from the apps store page
+    
+    eg https://store.steampowered.com/api/appdetails/?appids=10
+    
+    store in big json file???
+    
+    from here i can get appid title for any game
+    as well as release date among other thing like metacritic score
+    
+    one issue with appending a big json file is that 
+    for 5k games it comes out to like 45mb for the total
+    file. so storing on github could be problematic for 
+    a monolithic file. this could be stored as a directory of 
+    thousands of individual json files though.
+    
+    the obvious solution here is dump the files into a datalake
+    but im sure that violates steams TOS to share that out
+    to the broader world for data analytics purposes
+    
+    for the moment it might be best to have this scraper 
+    append pulls from the json data the same way the others
+    are to keep things relatively consistent for now
+    '''
+    # appid = 1363120
+    
+    s = requests.Session()
+    response = s.get('https://store.steampowered.com/api/appdetails/?appids={}'.format(appid))
+    
+    app_details = response.json()['{}'.format(appid)]['data']
+    
+    results = {
+        "appid": appid,
+        "name": app_details['name'],
+        "release_date": app_details['release_date']['date']
+        }
+    
+    # results_df = pd.DataFrame(results)
+    return results
+    
+    
+
+def appid_data_builder(appids):
+    '''
+    appid, name, reviews, tag_dict, release date
+    '''
+    details = pd.read_csv('details_data.csv')
+    reviews = pd.read_csv('review_data.csv')
+    tags = pd.read_csv('tag_data_dict.csv')
+    
+    full_data = details.merge(reviews, on="appid")
+    full_data = full_data.merge(tags, on="appid")
+    full_data['total_reviews'] = full_data['positive_reviews'] + full_data['negative_reviews']
+    full_data['score_percent'] = full_data['positive_reviews'] /  full_data['total_reviews']
+    
+    full_data['rogue_score_tuples'] = full_data['tag_dict'].apply(rogue_score)
+    full_data[['rogue_tag_votes', 'total_tag_votes', 'rogue_score','leading_rogue_tag']] = pd.DataFrame(full_data['rogue_score_tuples'].tolist(),index=full_data.index)
+    
+    
+    
+def tag_dict_converter(tag_file):
+    '''
+    converts a long-form list of tag data
+    into a single row with tag distribution
+    compressed into a dictionary for that row
+    
+    ie: 
+    appid    tag_dict
+    10    {action:5,co-op:9,roguelike:20,...}
+
+    '''
+    tag_data = pd.read_csv('tag_data.csv')
+    apps = set(tag_data['appid'])
+    
+    new_data = pd.DataFrame()
+    for i in apps:
+        # i = 248820
+        subset = tag_data[tag_data['appid'] == i][['name','count']]
+        tag_dict = dict(subset.values)
+    
+        tmp = {
+            'appid':i,
+            'tag_dict': tag_dict
+            }
+        
+        new_data = new_data.append(tmp, ignore_index=True)    
+    new_data.to_csv('tag_data_dict.csv',index=False)
+    
+    
+    
+    
+    
+    
+    
+def rogue_score(tag_dict):
+    '''
+    takes a dictionary of tag data and votes
+    adds up all tags having rogue___ 
+    compare rogue___ to total and thats the score
+    
+    show total number of tag votes, rogue votes,
+    and total tags
+    
+    
+    todo:
+    also hunt through the first 5 tags. if rogue_
+    is among them, then flag it as such
+    '''
+    
+    tag_dict = eval(tag_dict) #handles string dict conversion
+    
+    total_votes = sum(tag_dict.values())
+    
+    rogue_tags = ['Roguelike', 'Roguevania', 'Action Roguelike', 'Roguelite', 'Traditional Roguelike', 'Roguelike Deckbuilder']
+    rogue_dict = dict((k, tag_dict[k]) for k in rogue_tags if k in tag_dict)
+    total_rogue = sum(rogue_dict.values())    
+    
+    
+    # ?????????????? probably a way to clean this up...
+    tag_keys = []
+    tag_dict_keys = [tag_keys.append(key) for key in tag_dict.keys()]
+   
+    
+    results = []
+    for i in rogue_tags:
+        results.append(i in tag_keys[0:5])
+        
+    if True in results:
+        leading_rogue_flag = True
+    else:
+        leading_rogue_flag = False
+    
+    return (total_rogue, total_votes, total_rogue/total_votes, leading_rogue_flag)
     
 '''
 examples
