@@ -941,3 +941,38 @@ cosine_simil(1443430,811320)
 '''
 
 
+'''
+
+# import pyperclip as pyp
+# steamdb_text = str(pyp.paste())
+
+apps = []
+
+files = ['roguelike.html', 'roguelite.html', 'traditional_roguelike.html', 'roguelike_deckbuilder.html', 'action_roguelike.html', 'roguevania.html']
+
+for j in files:
+    
+    text_file = open(j, "rb")
+    steamdb_text = text_file.read()
+    text_file.close()
+
+    soup = BeautifulSoup(steamdb_text, "html.parser")
+    trs = [tr for tr in soup.find_all('tr')]
+
+    for app in soup.find_all('tr'):
+        apps.append(app.get('data-appid'))
+    appset = list(set(apps))
+
+
+
+# for each app, get title, reviews, tags
+for i in range(0,len(appset)):
+    print("{}/{}".format(i, len(appset)))
+    
+    if not(appset[i] is None):
+        # data_manager(appset[i], 'tag')
+        # data_manager(appset[i], 'review')
+        data_manager(appset[i], 'details')
+
+
+'''
