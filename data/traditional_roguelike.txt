@@ -1,0 +1,2420 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>User Tags · Traditional Roguelike · SteamDB</title>
+<link rel="stylesheet" integrity="sha512-qQw8QZxdjpmDUcC888Vu+90WGkR73Cs+Mpj1teXbcngnSbEjeStaY64aXIuRkegFQQkLoC+zAfkDz9NqReabBw==" href="/static/css/headcrab.css?v=a90c3c419c5d8e99">
+<link rel="alternate" type="application/rss+xml" title="SteamDB Blog" href="https://steamdb.info/api/BlogRSS/">
+<link rel="canonical" href="https://steamdb.info/tag/454187/">
+<meta property="twitter:card" content="summary">
+<meta property="twitter:site" content="@SteamDB">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SteamDB">
+<meta property="og:title" content="User Tags · Traditional Roguelike">
+<meta name="description" content="A list of products on Steam: Traditional Roguelike">
+<meta property="og:description" content="A list of products on Steam: Traditional Roguelike">
+<meta property="og:image" content="https://steamdb.info/static/logos/512px.png">
+<link rel="image_src" href="https://steamdb.info/static/logos/512px.png">
+<meta name="theme-color" content="#000000">
+<meta name="application-name" content="SteamDB">
+<meta name="apple-mobile-web-app-title" content="SteamDB">
+<link rel="manifest" href="/steamdb.webmanifest">
+<link rel="icon" type="image/png" href="/static/logos/32px.png">
+<link rel="icon" type="image/svg+xml" href="/static/logos/vector_prefers_schema.svg">
+<link rel="apple-touch-icon" sizes="180x180" href="/static/logos/512px_maskable.png">
+<link rel="mask-icon" href="/static/logos/vector_16px.svg" color="#000000">
+<link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="SteamDB">
+<link rel="preconnect" href="https://cdn.cloudflare.steamstatic.com/">
+</head>
+<body class="page-tags" itemscope itemtype="http://schema.org/WebSite" data-steam-cdn="https://cdn.cloudflare.steamstatic.com/">
+<a class="skip-main" href="#main" id="js-skip-main">Skip to content</a>
+<div class="header" role="banner">
+<div class="header-menu-button-container">
+<button type="button" class="header-menu-button" id="js-header-hamburger" accesskey="m" aria-label="Toggle menu"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-three-bars" aria-hidden="true"><path fill-rule="evenodd" d="M1 2.75A.75.75 0 011.75 2h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 2.75zm0 5A.75.75 0 011.75 7h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 7.75zM1.75 12a.75.75 0 100 1.5h12.5a.75.75 0 100-1.5H1.75z"></path></svg> <span>Menu</span></button>
+</div>
+<div class="header-navbar">
+<a href="/" class="header-brand" itemprop="url" aria-label="Homepage"><svg version="1.1" width="30" height="30" viewBox="0 0 128 128" class="octicon octicon-steamdb" aria-hidden="true"><path fill-rule="evenodd" d="M63.9 0C30.5 0 3.1 11.9.1 27.1l35.6 6.7c2.9-.9 6.2-1.3 9.6-1.3l16.7-10c-.2-2.5 1.3-5.1 4.7-7.2 4.8-3.1 12.3-4.8 19.9-4.8 5.2-.1 10.5.7 15 2.2 11.2 3.8 13.7 11.1 5.7 16.3-5.1 3.3-13.3 5-21.4 4.8l-22 7.9c-.2 1.6-1.3 3.1-3.4 4.5-5.9 3.8-17.4 4.7-25.6 1.9-3.6-1.2-6-3-7-4.8L2.5 38.4c2.3 3.6 6 6.9 10.8 9.8C5 53 0 59 0 65.5c0 6.4 4.8 12.3 12.9 17.1C4.8 87.3 0 93.2 0 99.6 0 115.3 28.6 128 64 128c35.3 0 64-12.7 64-28.4 0-6.4-4.8-12.3-12.9-17 8.1-4.8 12.9-10.7 12.9-17.1 0-6.5-5-12.6-13.4-17.4 8.3-5.1 13.3-11.4 13.3-18.2 0-16.5-28.7-29.9-64-29.9zm22.8 14.2c-5.2.1-10.2 1.2-13.4 3.3-5.5 3.6-3.8 8.5 3.8 11.1 7.6 2.6 18.1 1.8 23.6-1.8s3.8-8.5-3.8-11c-3.1-1-6.7-1.5-10.2-1.5zm.3 1.7c7.4 0 13.3 2.8 13.3 6.2 0 3.4-5.9 6.2-13.3 6.2s-13.3-2.8-13.3-6.2c0-3.4 5.9-6.2 13.3-6.2zM45.3 34.4c-1.6.1-3.1.2-4.6.4l9.1 1.7a10.8 5 0 1 1-8.1 9.3l-8.9-1.7c1 .9 2.4 1.7 4.3 2.4 6.4 2.2 15.4 1.5 20-1.5s3.2-7.2-3.2-9.3c-2.6-.9-5.7-1.3-8.6-1.3zM109 51v9.3c0 11-20.2 19.9-45 19.9-24.9 0-45-8.9-45-19.9v-9.2c11.5 5.3 27.4 8.6 44.9 8.6 17.6 0 33.6-3.3 45.2-8.7zm0 34.6v8.8c0 11-20.2 19.9-45 19.9-24.9 0-45-8.9-45-19.9v-8.8c11.6 5.1 27.4 8.2 45 8.2s33.5-3.1 45-8.2z" /></svg> <span>SteamDB</span></a>
+<form class="header-search" id="js-header-form" method="get" action="/search/" itemprop="potentialAction" itemscope itemtype="http://schema.org/SearchAction" role="search">
+<input type="hidden" name="a" value="app">
+<meta itemprop="target" content="https://steamdb.info/search/?a=app&amp;q={q}">
+<input type="text" accesskey="/" class="field" autocomplete="off" name="q" placeholder="Search…" itemprop="query-input" aria-label="Search">
+<button type="submit" class="submit" aria-label="Perform search" tabindex="-1"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-search" aria-hidden="true"><path fill-rule="evenodd" d="M11.5 7a4.499 4.499 0 11-8.998 0A4.499 4.499 0 0111.5 7zm-.82 4.74a6 6 0 111.06-1.06l3.04 3.04a.75.75 0 11-1.06 1.06l-3.04-3.04z"></path></svg></button>
+</form>
+<a href="/sales/">Sales</a>
+<a href="/graph/">Charts</a>
+<a href="/calculator/">Calculator</a>
+<a href="/patchnotes/">Patch notes</a>
+<a href="/upcoming/">Upcoming</a>
+<button type="button" class="btn btn-outline header-search-close">Close</button>
+</div>
+<button type="button" class="header-search-mobile" aria-label="Open search"><svg version="1.1" width="24" height="24" viewBox="0 0 16 16" class="octicon octicon-search" aria-hidden="true"><path fill-rule="evenodd" d="M11.5 7a4.499 4.499 0 11-8.998 0A4.499 4.499 0 0111.5 7zm-.82 4.74a6 6 0 111.06-1.06l3.04 3.04a.75.75 0 11-1.06 1.06l-3.04-3.04z"></path></svg></button>
+<div class="header-user hide-small">
+<a class="header-login" href="/login/?page=tag%2F454187" rel="nofollow">
+<svg version="1.1" width="20" height="20" viewBox="0 0 16 16" class="octicon octicon-steam" aria-hidden="true"><path d="M8 0a8 8 0 00-8 7.47c.07.1.13.21.18.32l4.15 1.67a2.2 2.2 0 011.31-.36l1.97-2.8v-.04c0-1.65 1.37-3 3.05-3a3.03 3.03 0 013.05 3 3.03 3.03 0 01-3.12 3l-2.81 1.97c0 .3-.05.6-.17.9a2.25 2.25 0 01-4.23-.37L.4 10.56A8.01 8.01 0 108 0zm2.66 4.27c-1.12 0-2.03.9-2.03 2s.91 1.99 2.03 1.99c1.12 0 2.03-.9 2.03-2s-.9-2-2.03-2zm0 .5c.85 0 1.53.66 1.53 1.49s-.68 1.5-1.53 1.5c-.84 0-1.52-.67-1.52-1.5s.68-1.5 1.52-1.5zM5.57 9.6c-.22 0-.43.04-.62.11l1.02.42c.65.26.95.99.68 1.62-.27.63-1 .93-1.65.67l-1-.4a1.73 1.73 0 003.13-.08c.18-.42.18-.88.01-1.3A1.69 1.69 0 005.57 9.6z" /></svg> <span>Sign in</span>
+</a>
+</div>
+</div>
+<div class="header-search-suggestions">
+<div class="container" id="js-search-tips">
+<p>Start typing to see game suggestions. This only suggests apps that have a store page.</p>
+<ul>
+<li class="hide-small">Use slash key (<kbd>/</kbd>) to focus search from anywhere.</li>
+<li class="hide-small">Use arrow keys (<kbd>↑</kbd> and <kbd>↓</kbd>) to navigate suggestions.</li>
+<li class="hide-small">Use escape (<kbd>Esc</kbd>) to close search.</li>
+<li>Enter an appid to be redirected to the app page.</li>
+<li>Enter a steamid (765...) to be redirected to calculator.</li>
+<li>Paste a profile link (/id/ or /profiles/) to be redirected to calculator.</li>
+<li>Paste any url that contains app/, sub/, bundle/, or depot/ to be redirected to the relevant page.</li>
+</ul>
+</div>
+<div class="container" id="js-search-suggestions"></div>
+<div class="container header-search-enter">
+Only apps with a store page are suggested.
+<span class="hide-small">
+<kbd>Enter</kbd> Submit to view all results.
+<kbd>Ctrl+Enter</kbd> View and filter in instant search.
+</span>
+</div>
+<div class="header-search-side-close">
+<div class="header-search-side-close-inner">Close &times;</div>
+</div>
+</div>
+<div class="header-menu-container" hidden>
+<div class="header-menu" tabindex="0">
+<ul>
+<li class="navigation-heading"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-info" aria-hidden="true"><path fill-rule="evenodd" d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm6.5-.25A.75.75 0 017.25 7h1a.75.75 0 01.75.75v2.75h.25a.75.75 0 010 1.5h-2a.75.75 0 010-1.5h.25v-2h-.25a.75.75 0 01-.75-.75zM8 6a1 1 0 100-2 1 1 0 000 2z"></path></svg> About</li>
+<li><a href="/blog/">Blog</a></li>
+<li><a href="/discord/">Discord</a></li>
+<li><a href="/faq/">FAQ &amp; help</a></li>
+<li><a href="/donate/">Donate &amp; contribute</a></li>
+<li><a href="/extension/">Browser extension</a></li>
+</ul>
+<ul>
+<li class="navigation-heading"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-search" aria-hidden="true"><path fill-rule="evenodd" d="M11.5 7a4.499 4.499 0 11-8.998 0A4.499 4.499 0 0111.5 7zm-.82 4.74a6 6 0 111.06-1.06l3.04 3.04a.75.75 0 11-1.06 1.06l-3.04-3.04z"></path></svg> Tools</li>
+<li><a href="/sales/">Sales</a></li>
+<li><a href="/graph/">Charts</a></li>
+<li><a href="/calculator/">Calculator</a></li>
+<li><a href="/patchnotes/">Patch notes</a></li>
+<li><a href="/search/">Search</a></li>
+<li><a href="/instantsearch/">Instant search</a></li>
+<li><a href="/sales/history/">When is next sale?</a></li>
+</ul>
+<ul>
+<li class="navigation-heading"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-sync" aria-hidden="true"><path fill-rule="evenodd" d="M8 2.5a5.487 5.487 0 00-4.131 1.869l1.204 1.204A.25.25 0 014.896 6H1.25A.25.25 0 011 5.75V2.104a.25.25 0 01.427-.177l1.38 1.38A7.001 7.001 0 0114.95 7.16a.75.75 0 11-1.49.178A5.501 5.501 0 008 2.5zM1.705 8.005a.75.75 0 01.834.656 5.501 5.501 0 009.592 2.97l-1.204-1.204a.25.25 0 01.177-.427h3.646a.25.25 0 01.25.25v3.646a.25.25 0 01-.427.177l-1.38-1.38A7.001 7.001 0 011.05 8.84a.75.75 0 01.656-.834z"></path></svg> Tracking</li>
+<li><a href="/apps/">Apps</a></li>
+<li><a href="/subs/">Packages</a></li>
+<li><a href="/bundles/">Bundles</a></li>
+<li><a href="/history/">History</a></li>
+<li><a href="/pricechanges/">Price changes</a></li>
+<li><a href="/upcoming/free/">Free promotions</a></li>
+</ul>
+<ul>
+<li class="navigation-heading"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-database" aria-hidden="true"><path fill-rule="evenodd" d="M2.5 3.5c0-.133.058-.318.282-.55.227-.237.592-.484 1.1-.708C4.899 1.795 6.354 1.5 8 1.5c1.647 0 3.102.295 4.117.742.51.224.874.47 1.101.707.224.233.282.418.282.551 0 .133-.058.318-.282.55-.227.237-.592.484-1.1.708C11.101 5.205 9.646 5.5 8 5.5c-1.647 0-3.102-.295-4.117-.742-.51-.224-.874-.47-1.101-.707-.224-.233-.282-.418-.282-.551zM1 3.5c0-.626.292-1.165.7-1.59.406-.422.956-.767 1.579-1.041C4.525.32 6.195 0 8 0c1.805 0 3.475.32 4.722.869.622.274 1.172.62 1.578 1.04.408.426.7.965.7 1.591v9c0 .626-.292 1.165-.7 1.59-.406.422-.956.767-1.579 1.041C11.476 15.68 9.806 16 8 16c-1.805 0-3.475-.32-4.721-.869-.623-.274-1.173-.62-1.579-1.04-.408-.426-.7-.965-.7-1.591v-9zM2.5 8V5.724c.241.15.503.286.779.407C4.525 6.68 6.195 7 8 7c1.805 0 3.475-.32 4.722-.869.275-.121.537-.257.778-.407V8c0 .133-.058.318-.282.55-.227.237-.592.484-1.1.708C11.101 9.705 9.646 10 8 10c-1.647 0-3.102-.295-4.117-.742-.51-.224-.874-.47-1.101-.707C2.558 8.318 2.5 8.133 2.5 8zm0 2.225V12.5c0 .133.058.318.282.55.227.237.592.484 1.1.708 1.016.447 2.471.742 4.118.742 1.647 0 3.102-.295 4.117-.742.51-.224.874-.47 1.101-.707.224-.233.282-.418.282-.551v-2.275c-.241.15-.503.285-.778.406-1.247.549-2.917.869-4.722.869-1.805 0-3.475-.32-4.721-.869a6.236 6.236 0 01-.779-.406z"></path></svg> Database</li>
+<li><a href="/tags/">User tags</a></li>
+<li><a href="/tech/">Technologies &amp; built with</a></li>
+<li><a href="/upcoming/">Upcoming releases</a></li>
+<li><a href="/upcoming/mostfollowed/">Most followed upcoming</a></li>
+<li><a href="/calendar/">Release calendar</a></li>
+<li><a href="/stats/releases/">Game releases by year</a></li>
+<li><a href="/badges/">Profile badges</a></li>
+</ul>
+<ul>
+<li class="navigation-heading"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-number" aria-hidden="true"><path fill-rule="evenodd" d="M5.604.089A.75.75 0 016 .75v4.77h.711a.75.75 0 110 1.5H3.759a.75.75 0 110-1.5H4.5V2.15l-.334.223a.75.75 0 01-.832-1.248l1.5-1a.75.75 0 01.77-.037zM9 4.75A.75.75 0 019.75 4h4a.75.75 0 01.53 1.28l-1.89 1.892c.312.076.604.18.867.319.742.391 1.244 1.063 1.244 2.005 0 .653-.231 1.208-.629 1.627-.386.408-.894.653-1.408.777-1.01.243-2.225.063-3.124-.527a.75.75 0 01.822-1.254c.534.35 1.32.474 1.951.322.306-.073.53-.201.67-.349.129-.136.218-.32.218-.596 0-.308-.123-.509-.444-.678-.373-.197-.98-.318-1.806-.318a.75.75 0 01-.53-1.28l1.72-1.72H9.75A.75.75 0 019 4.75zm-3.587 5.763c-.35-.05-.77.113-.983.572a.75.75 0 11-1.36-.632c.508-1.094 1.589-1.565 2.558-1.425 1 .145 1.872.945 1.872 2.222 0 1.433-1.088 2.192-1.79 2.681-.308.216-.571.397-.772.573H7a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75c0-.69.3-1.211.67-1.61.348-.372.8-.676 1.15-.92.8-.56 1.18-.904 1.18-1.474 0-.473-.267-.69-.587-.737z"></path></svg> Rankings</li>
+<li><a href="/stats/gameratings/">Top rated games</a></li>
+<li><a href="/badge/13/">Top game owners</a></li>
+<li><a href="/stats/toplevels/">Top profile levels</a></li>
+<li><a href="/stats/globaltopsellers/">Top selling games</a></li>
+<li><a href="/topsellers/">Top selling games last week</a></li>
+<li><a href="/stats/mostfollowed/">Most followed games</a></li>
+<li><a href="/stats/mostwished/">Most wishlisted games</a></li>
+</ul>
+<ul>
+<li class="navigation-heading"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-person" aria-hidden="true"><path fill-rule="evenodd" d="M10.5 5a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0zm.061 3.073a4 4 0 10-5.123 0 6.004 6.004 0 00-3.431 5.142.75.75 0 001.498.07 4.5 4.5 0 018.99 0 .75.75 0 101.498-.07 6.005 6.005 0 00-3.432-5.142z"></path></svg> Account</li>
+<li><a href="/login/?page=tag%2F454187" rel="nofollow">Sign in via Steam</a></li>
+<li><a href="/freepackages/">Free packages</a></li>
+<li>&nbsp;</li>
+<li><a href="https://steamstat.us/">Steam Status</a></li>
+<li><a href="https://steamapi.xpaw.me/">Steam Web API</a></li>
+</ul>
+<div class="header-disclaimer">SteamDB is a hobby project and is not affiliated with Valve or Steam.<br>All times on the site are UTC.</div>
+<div class="header-kbd hide-small"><kbd>M</kbd> toggle this menu <kbd>/</kbd> focus search</div>
+</div>
+</div>
+<script nonce="LGL087qmdNSyj85MUigBlPANuEQ=" integrity="sha512-i8dVOhHQtpxX9wY6BhPFuyOUJAsPsf+JghZm3eV+qrgyLpAN6m8jDOYrvnxZHujFrZzR/5MDPiWitfIvOZWjlw==" src="/static/js/global.js?v=8bc7553a11d0b69c"></script>
+<div class="body-wrap">
+<div class="global-announcement" role="banner">
+<style>
+@media (max-width: 9px) {
+    .global-announcement {
+        display: none;
+    }
+}
+</style>
+<div class="container">
+
+<svg width="21" height="21" viewBox="0 0 13 21" fill="none" xmlns="http://www.w3.org/2000/svg" class="octicon">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.80814 0.197492L5.19324 0.62086C4.96265 0.774812 4.69363 0.851788 4.38619 0.8133L3.92501 0.736324C3.42541 0.697836 2.96424 0.928764 2.73365 1.39062L2.4262 2.04492C2.27248 2.31433 2.08032 2.50677 1.8113 2.62224L1.38856 2.81468C0.92739 3.00712 0.658372 3.46897 0.696803 3.96932L0.735234 4.70059C0.773665 5.00849 0.696803 5.23942 0.504648 5.47035L0.23563 5.85523C-0.0718184 6.24011 -0.0718184 6.77894 0.197199 7.20231L0.619941 7.81812C0.773665 8.04904 0.812097 8.31846 0.812097 8.62636L0.735234 9.08822C0.696803 9.58856 0.92739 10.0504 1.38856 10.2813L2.04189 10.5893C2.31091 10.7432 2.50306 10.9356 2.61836 11.2051L2.77208 11.6284C3.00267 12.0903 3.42541 12.3597 3.96344 12.3212L4.69363 12.2827C4.96265 12.2442 5.23167 12.3212 5.46226 12.5137L5.84657 12.7831C6.23088 13.091 6.76891 13.091 7.19165 12.8216L7.80655 12.3982C8.03714 12.2442 8.30616 12.2057 8.57517 12.2057L9.03635 12.2827C9.53595 12.3212 10.0356 12.0903 10.2277 11.6284L10.5736 10.9741C10.6889 10.7047 10.881 10.5123 11.1501 10.3968L11.5728 10.2429C12.034 10.0119 12.3414 9.58856 12.303 9.04973L12.2646 8.31846C12.2261 8.04904 12.303 7.77963 12.4951 7.5487L12.7642 7.16382C13.0716 6.77894 13.0716 6.24011 12.8026 5.81674L12.3798 5.20093C12.2261 4.97 12.1493 4.70059 12.1877 4.43117L12.2646 3.96932C12.303 3.46897 12.0724 2.96863 11.6112 2.77619L10.9579 2.4298C10.6889 2.31433 10.4967 2.12189 10.3814 1.85248L10.1893 1.42911C9.99712 0.967252 9.53595 0.659348 9.03635 0.697836L8.30616 0.736324C7.99871 0.774812 7.76812 0.697836 7.53753 0.505396L7.15322 0.23598C6.76891 -0.0719243 6.23088 -0.0719243 5.80814 0.197492ZM6.4999 2.69921C4.38619 2.69921 2.65679 4.39268 2.65679 6.50952C2.65679 8.62636 4.38619 10.3583 6.4999 10.3583C8.6136 10.3583 10.3046 8.62636 10.3046 6.50952C10.3046 4.39268 8.6136 2.69921 6.4999 2.69921Z" fill="#ffc83d"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M3.04084 12.7833V20.096L6.49963 17.6328L9.95843 20.096V12.7833C9.65098 12.8988 9.3051 12.9758 8.95922 12.9373L8.53648 12.8603C8.38276 12.8603 8.26746 12.8988 8.15217 12.9758L7.53727 13.3606C6.88394 13.784 6.07689 13.784 5.42356 13.3222L5.07768 13.0143C4.96239 12.9373 4.8471 12.9373 4.7318 12.9373L4.00161 12.9758C3.65573 12.9758 3.30985 12.9373 3.04084 12.7833Z" fill="#ffc83d"></path>
+</svg>
+<b>Enjoy SteamDB? <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2825772093" target="_blank" rel="noopener">Give a Steam award to the site developer</a></b>
+</div>
+</div>
+<div class="body-content" id="main">
+<style>
+.table-products th:first-child,
+.table-products td:first-child {
+padding-left: 0;
+}
+@media (max-width: 980px) {
+.header-wrapper .container {
+flex-direction: column;
+margin-bottom: 20px;
+}
+}
+</style>
+<div class="header-wrapper">
+<div class="container d-flex">
+<h1 class="header-title flex-grow"><span class="muted"><a href="/tags/">Tags</a> »</span> Traditional Roguelike</h1>
+<div class="d-flex" style="align-items:center">
+<a class="btn btn-info" href="/upcoming/?tagid=454187">View upcoming</a>
+<a class="btn btn-info" href="/stats/releases/?tagid=454187">View release stats</a>
+<a href="/sales/?tagid=454187" class="btn btn-info" style="align-self:center">View sales with this tag</a>
+<a class="btn btn-info" href="/instantsearch/?refinementList%5Btags%5D%5B0%5D=Traditional+Roguelike">Filter in instant search</a>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="table-responsive">
+<div class="pre-table-title">Traditional Roguelike</div>
+<table class="table-products text-center" id="table-apps" data-order="[[3,&quot;desc&quot;]]">
+<thead>
+<tr>
+<th style="width:22px" data-orderable="false"> </th>
+<th style="width:119px" data-orderable="false"> </th>
+<th class="text-left">Name</th>
+<th style="width:100px" title="SteamDB Rating">Rating</th>
+<th style="width:100px">Followers</th>
+<th style="width:100px">Online</th>
+<th style="width:100px">Peak</th>
+</tr>
+</thead>
+<tfoot>
+<tr>
+<td colspan="7" class="dataTables_empty">Initializing table…</td>
+</tr>
+</tfoot>
+<tbody hidden>
+<tr class="app" data-appid="379210" data-cache="1656361193">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/379210/">Wayward</a></td>
+<td>80.69%</td>
+<td data-sort="28379">28,379</td>
+<td data-sort="17">17</td>
+<td data-sort="140">140</td>
+</tr>
+<tr class="app" data-appid="333640" data-cache="1656144822">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/333640/">Caves of Qud</a></td>
+<td>92.17%</td>
+<td data-sort="24022">24,022</td>
+<td data-sort="188">188</td>
+<td data-sort="1221">1,221</td>
+</tr>
+<tr class="app" data-appid="576770" data-cache="1656316872">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/576770/">Low Magic Age</a></td>
+<td>87.32%</td>
+<td data-sort="19177">19,177</td>
+<td data-sort="41">41</td>
+<td data-sort="675">675</td>
+</tr>
+<tr class="app" data-appid="259680" data-cache="1652464311">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/259680/">Tales of Maj&#039;Eyal</a></td>
+<td>92.11%</td>
+<td data-sort="16000">16,000</td>
+<td data-sort="177">177</td>
+<td data-sort="867">867</td>
+</tr>
+<tr class="app" data-appid="628770" data-cache="1651637700">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/628770/">Tangledeep</a></td>
+<td>80.33%</td>
+<td data-sort="14210">14,210</td>
+<td data-sort="28">28</td>
+<td data-sort="477">477</td>
+</tr>
+<tr class="app" data-appid="351700" data-cache="1652522959">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/351700/">UnReal World</a></td>
+<td>88.70%</td>
+<td data-sort="13332">13,332</td>
+<td data-sort="15">15</td>
+<td data-sort="249">249</td>
+</tr>
+<tr class="app" data-appid="811320" data-cache="1656345449">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/811320/">Jupiter Hell</a></td>
+<td>87.96%</td>
+<td data-sort="13105">13,105</td>
+<td data-sort="48">48</td>
+<td data-sort="666">666</td>
+</tr>
+<tr class="app" data-appid="266210" data-cache="1651724091">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/266210/">One Way Heroics</a></td>
+<td>90.57%</td>
+<td data-sort="11762">11,762</td>
+<td data-sort="12">12</td>
+<td data-sort="775">775</td>
+</tr>
+<tr class="app" data-appid="226620" data-cache="1654206069">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/226620/">Desktop Dungeons</a></td>
+<td>85.78%</td>
+<td data-sort="11061">11,061</td>
+<td data-sort="22">22</td>
+<td data-sort="1528">1,528</td>
+</tr>
+<tr class="app" data-appid="333300" data-cache="1652884345">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/333300/">ADOM (Ancient Domains Of Mystery)</a></td>
+<td>81.88%</td>
+<td data-sort="9860">9,860</td>
+<td data-sort="38">38</td>
+<td data-sort="312">312</td>
+</tr>
+<tr class="app" data-appid="722730" data-cache="1653698326">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/722730/">Cogmind</a></td>
+<td>90.90%</td>
+<td data-sort="9537">9,537</td>
+<td data-sort="14">14</td>
+<td data-sort="168">168</td>
+</tr>
+<tr class="app" data-appid="311720" data-cache="1648598232">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/311720/">Sproggiwood</a></td>
+<td>76.75%</td>
+<td data-sort="7288">7,288</td>
+<td data-sort="1">1</td>
+<td data-sort="131">131</td>
+</tr>
+<tr class="app" data-appid="1356040" data-cache="1655839973">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1356040/">Ampersat</a></td>
+<td>76.12%</td>
+<td data-sort="6938">6,938</td>
+<td data-sort="0">0</td>
+<td data-sort="8">8</td>
+</tr>
+<tr class="app" data-appid="1178790" data-cache="1654704534">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1178790/">Shiren the Wanderer: The Tower of Fortune and the Dice of Fate</a></td>
+<td>74.45%</td>
+<td data-sort="6768">6,768</td>
+<td data-sort="49">49</td>
+<td data-sort="2671">2,671</td>
+</tr>
+<tr class="app" data-appid="98800" data-cache="1654916707">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/98800/">Dungeons of Dredmor</a></td>
+<td>90.60%</td>
+<td data-sort="5988">5,988</td>
+<td data-sort="43">43</td>
+<td data-sort="5098">5,098</td>
+</tr>
+<tr class="app" data-appid="288120" data-cache="1652623754">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/288120/">Dungeonmans</a></td>
+<td>86.36%</td>
+<td data-sort="5622">5,622</td>
+<td data-sort="13">13</td>
+<td data-sort="248">248</td>
+</tr>
+<tr class="app" data-appid="1623210" data-cache="1655997800">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1623210/">Soulash</a></td>
+<td>72.28%</td>
+<td data-sort="5616">5,616</td>
+<td data-sort="19">19</td>
+<td data-sort="486">486</td>
+</tr>
+<tr class="app" data-appid="650940" data-cache="1655857875">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/650940/">Rogue Empire: Dungeon Crawler RPG</a></td>
+<td>81.84%</td>
+<td data-sort="5481">5,481</td>
+<td data-sort="6">6</td>
+<td data-sort="340">340</td>
+</tr>
+<tr class="app" data-appid="1418020" data-cache="1652761404">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1418020/">Tavern of Gods</a></td>
+<td>75.52%</td>
+<td data-sort="4550">4,550</td>
+<td data-sort="8">8</td>
+<td data-sort="800">800</td>
+</tr>
+<tr class="app" data-appid="1638390" data-cache="1656221631">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1638390/">Indies&#039; Lies</a></td>
+<td>77.88%</td>
+<td data-sort="4536">4,536</td>
+<td data-sort="24">24</td>
+<td data-sort="606">606</td>
+</tr>
+<tr class="app" data-appid="1266820" data-cache="1652623764">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1266820/">Ultimate ADOM - Caverns of Chaos</a></td>
+<td>58.34%</td>
+<td data-sort="4505">4,505</td>
+<td data-sort="6">6</td>
+<td data-sort="135">135</td>
+</tr>
+<tr class="app" data-appid="434880" data-cache="1648598176">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/434880/">Hieroglyphika</a></td>
+<td>61.91%</td>
+<td data-sort="4223">4,223</td>
+<td data-sort="0">0</td>
+<td data-sort="11">11</td>
+</tr>
+<tr class="app" data-appid="1184810" data-cache="1656006944">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1184810/">Mainframe Defenders</a></td>
+<td>85.45%</td>
+<td data-sort="4204">4,204</td>
+<td data-sort="5">5</td>
+<td data-sort="40">40</td>
+</tr>
+<tr class="app" data-appid="1271280" data-cache="1653401242">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1271280/">Rift Wizard</a></td>
+<td>88.72%</td>
+<td data-sort="3889">3,889</td>
+<td data-sort="19">19</td>
+<td data-sort="339">339</td>
+</tr>
+<tr class="app" data-appid="1769170" data-cache="1656090418">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1769170/">Shattered Pixel Dungeon</a></td>
+<td>87.90%</td>
+<td data-sort="3776">3,776</td>
+<td data-sort="35">35</td>
+<td data-sort="336">336</td>
+</tr>
+<tr class="app" data-appid="270050" data-cache="1651034467">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/270050/">Quest of Dungeons</a></td>
+<td>72.63%</td>
+<td data-sort="3696">3,696</td>
+<td data-sort="3">3</td>
+<td data-sort="125">125</td>
+</tr>
+<tr class="app" data-appid="1056490" data-cache="1655900064">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1056490/">The World is Your Weapon</a></td>
+<td>89.78%</td>
+<td data-sort="3593">3,593</td>
+<td data-sort="4">4</td>
+<td data-sort="81">81</td>
+</tr>
+<tr class="app" data-appid="1112930" data-cache="1656332401">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1112930/">Dredgers</a></td>
+<td>85.36%</td>
+<td data-sort="3589">3,589</td>
+<td data-sort="7">7</td>
+<td data-sort="312">312</td>
+</tr>
+<tr class="app" data-appid="1211600" data-cache="1654683281">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1211600/">ZED ZONE</a></td>
+<td data-sort="-1" class="muted">-</td>
+<td data-sort="3564">3,564</td>
+<td data-sort="0">0</td>
+<td data-sort="0">0</td>
+</tr>
+<tr class="app" data-appid="561740" data-cache="1655226708">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/561740/">MidBoss</a></td>
+<td>79.12%</td>
+<td data-sort="3525">3,525</td>
+<td data-sort="2">2</td>
+<td data-sort="97">97</td>
+</tr>
+<tr class="app" data-appid="365900" data-cache="1652796377">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/365900/">Pixel Dungeon</a></td>
+<td>83.07%</td>
+<td data-sort="3269">3,269</td>
+<td data-sort="2">2</td>
+<td data-sort="27">27</td>
+</tr>
+<tr class="app" data-appid="305640" data-cache="1654745164">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/305640/">Shattered Planet</a></td>
+<td>65.85%</td>
+<td data-sort="2772">2,772</td>
+<td data-sort="1">1</td>
+<td data-sort="209">209</td>
+</tr>
+<tr class="app" data-appid="233700" data-cache="1655857066">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/233700/">Sword of the Stars: The Pit</a></td>
+<td>81.82%</td>
+<td data-sort="2767">2,767</td>
+<td data-sort="12">12</td>
+<td data-sort="1298">1,298</td>
+</tr>
+<tr class="app" data-appid="341390" data-cache="1649117062">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/341390/">Vulture for NetHack</a></td>
+<td>66.35%</td>
+<td data-sort="2513">2,513</td>
+<td data-sort="3">3</td>
+<td data-sort="55">55</td>
+</tr>
+<tr class="app" data-appid="956450" data-cache="1655771329">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/956450/">Rogue Fable III</a></td>
+<td>87.30%</td>
+<td data-sort="2457">2,457</td>
+<td data-sort="46">46</td>
+<td data-sort="173">173</td>
+</tr>
+<tr class="app" data-appid="1658930" data-cache="1653269780">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1658930/">Blazing Aries</a></td>
+<td>84.41%</td>
+<td data-sort="2210">2,210</td>
+<td data-sort="6">6</td>
+<td data-sort="180">180</td>
+</tr>
+<tr class="app" data-appid="1189230" data-cache="1653006743">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1189230/">Door in the Woods</a></td>
+<td>72.96%</td>
+<td data-sort="2160">2,160</td>
+<td data-sort="1">1</td>
+<td data-sort="75">75</td>
+</tr>
+<tr class="app" data-appid="1895860" data-cache="1656389056">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1895860/">Monster Girls and the Mysterious Adventure 2</a></td>
+<td>82.77%</td>
+<td data-sort="2116">2,116</td>
+<td data-sort="61">61</td>
+<td data-sort="529">529</td>
+</tr>
+<tr class="app" data-appid="551620" data-cache="1656068372">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/551620/">Approaching Infinity</a></td>
+<td>83.74%</td>
+<td data-sort="2034">2,034</td>
+<td data-sort="9">9</td>
+<td data-sort="42">42</td>
+</tr>
+<tr class="app" data-appid="676830" data-cache="1639030031">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/676830/">Xenomarine</a></td>
+<td>75.23%</td>
+<td data-sort="1893">1,893</td>
+<td data-sort="1">1</td>
+<td data-sort="19">19</td>
+</tr>
+<tr class="app" data-appid="207430" data-cache="1634419257">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/207430/">Hack, Slash, Loot</a></td>
+<td>50.79%</td>
+<td data-sort="1752">1,752</td>
+<td data-sort="1">1</td>
+<td data-sort="546">546</td>
+</tr>
+<tr class="app" data-appid="1443430" data-cache="1656146075">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1443430/">Rogue</a></td>
+<td>87.75%</td>
+<td data-sort="1718">1,718</td>
+<td data-sort="0">0</td>
+<td data-sort="74">74</td>
+</tr>
+<tr class="app" data-appid="1120400" data-cache="1656012330">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1120400/">Terra Randoma</a></td>
+<td>77.36%</td>
+<td data-sort="1642">1,642</td>
+<td data-sort="1">1</td>
+<td data-sort="35">35</td>
+</tr>
+<tr class="app" data-appid="325370" data-cache="1655917715">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/325370/">Nova-111</a></td>
+<td>72.13%</td>
+<td data-sort="1534">1,534</td>
+<td data-sort="1">1</td>
+<td data-sort="155">155</td>
+</tr>
+<tr class="app" data-appid="265990" data-cache="1651003424">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/265990/">Rogue&#039;s Tale</a></td>
+<td>68.24%</td>
+<td data-sort="1417">1,417</td>
+<td data-sort="9">9</td>
+<td data-sort="190">190</td>
+</tr>
+<tr class="app" data-appid="497800" data-cache="1656395597">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/497800/">Golden Krone Hotel</a></td>
+<td>86.06%</td>
+<td data-sort="1397">1,397</td>
+<td data-sort="1">1</td>
+<td data-sort="50">50</td>
+</tr>
+<tr class="app" data-appid="1627630" data-cache="1654229573">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1627630/">Dungeon Adventure</a></td>
+<td>66.96%</td>
+<td data-sort="1250">1,250</td>
+<td data-sort="1">1</td>
+<td data-sort="174">174</td>
+</tr>
+<tr class="app" data-appid="1409730" data-cache="1655129173">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1409730/">Hero of Not Our Time</a></td>
+<td>66.72%</td>
+<td data-sort="1166">1,166</td>
+<td data-sort="1">1</td>
+<td data-sort="42">42</td>
+</tr>
+<tr class="app" data-appid="662540" data-cache="1656425041">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/662540/">Haque</a></td>
+<td>80.98%</td>
+<td data-sort="1121">1,121</td>
+<td data-sort="0">0</td>
+<td data-sort="15">15</td>
+</tr>
+<tr class="app" data-appid="342610" data-cache="1656023332">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/342610/">HyperRogue</a></td>
+<td>87.13%</td>
+<td data-sort="1096">1,096</td>
+<td data-sort="6">6</td>
+<td data-sort="53">53</td>
+</tr>
+<tr class="app" data-appid="838990" data-cache="1645189489">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/838990/">Endhall</a></td>
+<td>77.68%</td>
+<td data-sort="877">877</td>
+<td data-sort="0">0</td>
+<td data-sort="7">7</td>
+</tr>
+<tr class="app" data-appid="1698630" data-cache="1656403858">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1698630/">Sword of the Stars: The Pit 2</a></td>
+<td>75.03%</td>
+<td data-sort="819">819</td>
+<td data-sort="2">2</td>
+<td data-sort="8">8</td>
+</tr>
+<tr class="app" data-appid="1362440" data-cache="1651592692">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1362440/">Lost in Dungeon / 地牢迷失者</a></td>
+<td>68.39%</td>
+<td data-sort="804">804</td>
+<td data-sort="0">0</td>
+<td data-sort="13">13</td>
+</tr>
+<tr class="app" data-appid="1414770" data-cache="1654457450">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1414770/">Quinterra</a></td>
+<td>70.52%</td>
+<td data-sort="770">770</td>
+<td data-sort="0">0</td>
+<td data-sort="29">29</td>
+</tr>
+<tr class="app" data-appid="432380" data-cache="1632799832">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/432380/">Hydra Slayer</a></td>
+<td>79.89%</td>
+<td data-sort="766">766</td>
+<td data-sort="0">0</td>
+<td data-sort="8">8</td>
+</tr>
+<tr class="app" data-appid="1370940" data-cache="1655211570">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1370940/">NovaMundi: The Spear of Chaqu&eacute;n</a></td>
+<td>59.97%</td>
+<td data-sort="755">755</td>
+<td data-sort="0">0</td>
+<td data-sort="4">4</td>
+</tr>
+<tr class="app" data-appid="386710" data-cache="1645085076">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/386710/">C:\raft</a></td>
+<td>55.22%</td>
+<td data-sort="681">681</td>
+<td data-sort="0">0</td>
+<td data-sort="6">6</td>
+</tr>
+<tr class="app" data-appid="885780" data-cache="1630349602">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/885780/">Legion&#039;s Crawl</a></td>
+<td>69.36%</td>
+<td data-sort="675">675</td>
+<td data-sort="0">0</td>
+<td data-sort="11">11</td>
+</tr>
+<tr class="app" data-appid="1170400" data-cache="1637838261">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1170400/">Labyrinth of the Witch</a></td>
+<td>63.88%</td>
+<td data-sort="654">654</td>
+<td data-sort="1">1</td>
+<td data-sort="43">43</td>
+</tr>
+<tr class="app" data-appid="409490" data-cache="1619496690">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/409490/">Rogue Harvest</a></td>
+<td>57.17%</td>
+<td data-sort="651">651</td>
+<td data-sort="0">0</td>
+<td data-sort="6">6</td>
+</tr>
+<tr class="app" data-appid="378030" data-cache="1652366459">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/378030/">Cardinal Quest 2</a></td>
+<td>80.43%</td>
+<td data-sort="648">648</td>
+<td data-sort="1">1</td>
+<td data-sort="23">23</td>
+</tr>
+<tr class="app" data-appid="690560" data-cache="1654592785">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/690560/">I Am Overburdened</a></td>
+<td>79.28%</td>
+<td data-sort="585">585</td>
+<td data-sort="0">0</td>
+<td data-sort="25">25</td>
+</tr>
+<tr class="app" data-appid="372080" data-cache="1648598188">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/372080/">Ananias Roguelike</a></td>
+<td>71.23%</td>
+<td data-sort="572">572</td>
+<td data-sort="0">0</td>
+<td data-sort="10">10</td>
+</tr>
+<tr class="app" data-appid="332540" data-cache="1648598205">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/332540/">We Slay Monsters</a></td>
+<td>82.01%</td>
+<td data-sort="548">548</td>
+<td data-sort="0">0</td>
+<td data-sort="38">38</td>
+</tr>
+<tr class="app" data-appid="1541710" data-cache="1653192046">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1541710/">Wyvern</a></td>
+<td>66.00%</td>
+<td data-sort="546">546</td>
+<td data-sort="2">2</td>
+<td data-sort="45">45</td>
+</tr>
+<tr class="app" data-appid="1920320" data-cache="1655579832">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1920320/">Parasite</a></td>
+<td>72.22%</td>
+<td data-sort="518">518</td>
+<td data-sort="0">0</td>
+<td data-sort="7">7</td>
+</tr>
+<tr class="app" data-appid="1146420" data-cache="1655237539">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1146420/">Relic Space</a></td>
+<td data-sort="-1" class="muted">-</td>
+<td data-sort="500">500</td>
+<td data-sort="0">0</td>
+<td data-sort="0">0</td>
+</tr>
+<tr class="app" data-appid="1426900" data-cache="1651767319">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1426900/">Dread Nautical</a></td>
+<td>66.57%</td>
+<td data-sort="477">477</td>
+<td data-sort="0">0</td>
+<td data-sort="16">16</td>
+</tr>
+<tr class="app" data-appid="629340" data-cache="1640909870">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/629340/">Possession</a></td>
+<td>73.89%</td>
+<td data-sort="444">444</td>
+<td data-sort="0">0</td>
+<td data-sort="6">6</td>
+</tr>
+<tr class="app" data-appid="1519490" data-cache="1656398515">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1519490/">The Doors of Trithius</a></td>
+<td>79.58%</td>
+<td data-sort="439">439</td>
+<td data-sort="1">1</td>
+<td data-sort="5">5</td>
+</tr>
+<tr class="app" data-appid="360030" data-cache="1646350278">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/360030/">XLarn</a></td>
+<td>65.46%</td>
+<td data-sort="431">431</td>
+<td data-sort="0">0</td>
+<td data-sort="17">17</td>
+</tr>
+<tr class="app" data-appid="837200" data-cache="1654812334">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/837200/">NetHack: Legacy</a></td>
+<td>67.30%</td>
+<td data-sort="420">420</td>
+<td data-sort="0">0</td>
+<td data-sort="6">6</td>
+</tr>
+<tr class="app" data-appid="576420" data-cache="1640473523">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/576420/">The Curse Of Yendor</a></td>
+<td>82.84%</td>
+<td data-sort="407">407</td>
+<td data-sort="0">0</td>
+<td data-sort="12">12</td>
+</tr>
+<tr class="app" data-appid="1074040" data-cache="1654967137">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1074040/">The Red Prison</a></td>
+<td>70.68%</td>
+<td data-sort="401">401</td>
+<td data-sort="0">0</td>
+<td data-sort="99">99</td>
+</tr>
+<tr class="app" data-appid="1937750" data-cache="1654911064">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1937750/">Prime of Flames</a></td>
+<td data-sort="-1" class="muted">-</td>
+<td data-sort="400">400</td>
+<td data-sort="0">0</td>
+<td data-sort="0">0</td>
+</tr>
+<tr class="app" data-appid="1632420" data-cache="1654636075">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1632420/">Risk Of Waifus</a></td>
+<td>54.84%</td>
+<td data-sort="383">383</td>
+<td data-sort="1">1</td>
+<td data-sort="3">3</td>
+</tr>
+<tr class="app" data-appid="1602620" data-cache="1652369574">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1602620/">Deadzoned: A Credits Bounty</a></td>
+<td data-sort="-1" class="muted">-</td>
+<td data-sort="356">356</td>
+<td data-sort="0">0</td>
+<td data-sort="0">0</td>
+</tr>
+<tr class="app" data-appid="1490680" data-cache="1656159611">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1490680/">God Sword</a></td>
+<td>40.54%</td>
+<td data-sort="344">344</td>
+<td data-sort="5">5</td>
+<td data-sort="25">25</td>
+</tr>
+<tr class="app" data-appid="772090" data-cache="1637493604">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/772090/">Once upon a Dungeon</a></td>
+<td>76.65%</td>
+<td data-sort="320">320</td>
+<td data-sort="0">0</td>
+<td data-sort="8">8</td>
+</tr>
+<tr class="app" data-appid="1863540" data-cache="1650895665">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1863540/">月出之时</a></td>
+<td>85.57%</td>
+<td data-sort="319">319</td>
+<td data-sort="0">0</td>
+<td data-sort="9">9</td>
+</tr>
+<tr class="app" data-appid="1456630" data-cache="1636844279">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1456630/">Dawn of the Mexica</a></td>
+<td>78.44%</td>
+<td data-sort="319">319</td>
+<td data-sort="0">0</td>
+<td data-sort="7">7</td>
+</tr>
+<tr class="app" data-appid="1683370" data-cache="1654793086">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1683370/">Blocky Dungeon</a></td>
+<td data-sort="-1" class="muted">-</td>
+<td data-sort="318">318</td>
+<td data-sort="0">0</td>
+<td data-sort="0">0</td>
+</tr>
+<tr class="app" data-appid="547980" data-cache="1651724096">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/547980/">Equin: The Lantern</a></td>
+<td>79.42%</td>
+<td data-sort="313">313</td>
+<td data-sort="0">0</td>
+<td data-sort="7">7</td>
+</tr>
+<tr class="app" data-appid="736710" data-cache="1655631057">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/736710/">Yōdanji</a></td>
+<td>68.78%</td>
+<td data-sort="309">309</td>
+<td data-sort="0">0</td>
+<td data-sort="9">9</td>
+</tr>
+<tr class="app" data-appid="448810" data-cache="1651637956">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/448810/">Torgar&#039;s Quest</a></td>
+<td>66.98%</td>
+<td data-sort="305">305</td>
+<td data-sort="0">0</td>
+<td data-sort="5">5</td>
+</tr>
+<tr class="app" data-appid="1366520" data-cache="1626681649">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1366520/">Dungeon Limbus</a></td>
+<td>56.53%</td>
+<td data-sort="291">291</td>
+<td data-sort="0">0</td>
+<td data-sort="33">33</td>
+</tr>
+<tr class="app" data-appid="1085830" data-cache="1656332401">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1085830/">Knights of Frontier Valley</a></td>
+<td data-sort="-1" class="muted">-</td>
+<td data-sort="281">281</td>
+<td data-sort="0">0</td>
+<td data-sort="0">0</td>
+</tr>
+<tr class="app" data-appid="1105660" data-cache="1655789444">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1105660/">Stay Safe: Labyrinth of the Mad</a></td>
+<td>66.33%</td>
+<td data-sort="276">276</td>
+<td data-sort="2">2</td>
+<td data-sort="8">8</td>
+</tr>
+<tr class="app" data-appid="976120" data-cache="1656332401">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/976120/">WARPZONE DRIFTER</a></td>
+<td>71.04%</td>
+<td data-sort="258">258</td>
+<td data-sort="0">0</td>
+<td data-sort="9">9</td>
+</tr>
+<tr class="app" data-appid="1776930" data-cache="1656435440">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1776930/">Undergrave</a></td>
+<td data-sort="-1" class="muted">-</td>
+<td data-sort="253">253</td>
+<td data-sort="0">0</td>
+<td data-sort="0">0</td>
+</tr>
+<tr class="app" data-appid="1141160" data-cache="1641575730">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1141160/">Fractalis</a></td>
+<td>70.84%</td>
+<td data-sort="248">248</td>
+<td data-sort="0">0</td>
+<td data-sort="4">4</td>
+</tr>
+<tr class="app" data-appid="1780850" data-cache="1656332417">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1780850/">Cthulhu Dungeon</a></td>
+<td>71.00%</td>
+<td data-sort="229">229</td>
+<td data-sort="0">0</td>
+<td data-sort="11">11</td>
+</tr>
+<tr class="app" data-appid="856570" data-cache="1656436554">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/856570/">Lost Flame</a></td>
+<td>82.55%</td>
+<td data-sort="228">228</td>
+<td data-sort="1">1</td>
+<td data-sort="9">9</td>
+</tr>
+<tr class="app" data-appid="1455610" data-cache="1653930919">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1455610/">Little Martian</a></td>
+<td data-sort="-1" class="muted">-</td>
+<td data-sort="222">222</td>
+<td data-sort="0">0</td>
+<td data-sort="0">0</td>
+</tr>
+<tr class="app" data-appid="1820470" data-cache="1650109678">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1820470/">The Wratch&#039;s Den</a></td>
+<td data-sort="-1" class="muted">-</td>
+<td data-sort="217">217</td>
+<td data-sort="0">0</td>
+<td data-sort="0">0</td>
+</tr>
+<tr class="app" data-appid="1301410" data-cache="1643336303">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1301410/">Solar Rogue</a></td>
+<td>69.20%</td>
+<td data-sort="217">217</td>
+<td data-sort="0">0</td>
+<td data-sort="3">3</td>
+</tr>
+<tr class="app" data-appid="1938740" data-cache="1654661339">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1938740/">Valkyrie Nemesis</a></td>
+<td>50.00%</td>
+<td data-sort="213">213</td>
+<td data-sort="0">0</td>
+<td data-sort="3">3</td>
+</tr>
+<tr class="app" data-appid="1870370" data-cache="1656318839">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1870370/">怀旧版三国志Idle RPG</a></td>
+<td>65.16%</td>
+<td data-sort="213">213</td>
+<td data-sort="12">12</td>
+<td data-sort="75">75</td>
+</tr>
+<tr class="app" data-appid="1147880" data-cache="1631419649">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1147880/">Auto Fire</a></td>
+<td data-sort="-1" class="muted">-</td>
+<td data-sort="212">212</td>
+<td data-sort="0">0</td>
+<td data-sort="0">0</td>
+</tr>
+<tr class="app" data-appid="1839350" data-cache="1656332417">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1839350/">Dawn of Kagura: Natsu&#039;s Story</a></td>
+<td>77.41%</td>
+<td data-sort="196">196</td>
+<td data-sort="0">0</td>
+<td data-sort="4">4</td>
+</tr>
+<tr class="app" data-appid="1715380" data-cache="1656332414">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1715380/">Megania Online</a></td>
+<td>47.53%</td>
+<td data-sort="195">195</td>
+<td data-sort="0">0</td>
+<td data-sort="71">71</td>
+</tr>
+<tr class="app" data-appid="1348510" data-cache="1638961860">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1348510/">问道仙途</a></td>
+<td>62.26%</td>
+<td data-sort="185">185</td>
+<td data-sort="0">0</td>
+<td data-sort="21">21</td>
+</tr>
+<tr class="app" data-appid="1934990" data-cache="1652508575">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1934990/">Senpai and the Mysterious Dungeon</a></td>
+<td data-sort="-1" class="muted">-</td>
+<td data-sort="170">170</td>
+<td data-sort="0">0</td>
+<td data-sort="0">0</td>
+</tr>
+<tr class="app" data-appid="1660890" data-cache="1656332414">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1660890/">混沌小队（CHAOS SQUAD）</a></td>
+<td data-sort="-1" class="muted">-</td>
+<td data-sort="170">170</td>
+<td data-sort="0">0</td>
+<td data-sort="0">0</td>
+</tr>
+<tr class="app" data-appid="1072800" data-cache="1628995830">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1072800/">Ufflegrim</a></td>
+<td>76.34%</td>
+<td data-sort="159">159</td>
+<td data-sort="0">0</td>
+<td data-sort="4">4</td>
+</tr>
+<tr class="app" data-appid="1824840" data-cache="1656218047">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1824840/">魔能纪元</a></td>
+<td>59.43%</td>
+<td data-sort="153">153</td>
+<td data-sort="21">21</td>
+<td data-sort="97">97</td>
+</tr>
+<tr class="app" data-appid="1644260" data-cache="1625322175">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1644260/">Legend of You</a></td>
+<td data-sort="-1" class="muted">-</td>
+<td data-sort="148">148</td>
+<td data-sort="0">0</td>
+<td data-sort="0">0</td>
+</tr>
+<tr class="app" data-appid="1573540" data-cache="1651752909">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1573540/">Spaceship Simulator</a></td>
+<td>75.10%</td>
+<td data-sort="148">148</td>
+<td data-sort="0">0</td>
+<td data-sort="5">5</td>
+</tr>
+<tr class="app" data-appid="1398630" data-cache="1652170502">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1398630/">无限次元</a></td>
+<td>68.80%</td>
+<td data-sort="145">145</td>
+<td data-sort="0">0</td>
+<td data-sort="8">8</td>
+</tr>
+<tr class="app" data-appid="1630690" data-cache="1656018290">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1630690/">Equin 2: The Warren Peace</a></td>
+<td>77.41%</td>
+<td data-sort="137">137</td>
+<td data-sort="0">0</td>
+<td data-sort="5">5</td>
+</tr>
+<tr class="app" data-appid="883850" data-cache="1615205075">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/883850/">Dungene</a></td>
+<td data-sort="-1" class="muted">-</td>
+<td data-sort="136">136</td>
+<td data-sort="0">0</td>
+<td data-sort="0">0</td>
+</tr>
+<tr class="app" data-appid="1801410" data-cache="1656397604">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1801410/">Deadnaut: Signal Lost</a></td>
+<td data-sort="-1" class="muted">-</td>
+<td data-sort="133">133</td>
+<td data-sort="0">0</td>
+<td data-sort="0">0</td>
+</tr>
+<tr class="app" data-appid="1366150" data-cache="1652084101">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1366150/">Greedy Dungeon</a></td>
+<td>71.48%</td>
+<td data-sort="133">133</td>
+<td data-sort="0">0</td>
+<td data-sort="9">9</td>
+</tr>
+<tr class="app" data-appid="1411920" data-cache="1651810606">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1411920/">Get Ogre It</a></td>
+<td>72.75%</td>
+<td data-sort="132">132</td>
+<td data-sort="0">0</td>
+<td data-sort="602">602</td>
+</tr>
+<tr class="app" data-appid="1820320" data-cache="1654493415">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1820320/">神徒</a></td>
+<td>68.94%</td>
+<td data-sort="130">130</td>
+<td data-sort="0">0</td>
+<td data-sort="7">7</td>
+</tr>
+<tr class="app" data-appid="1570290" data-cache="1651773217">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1570290/">Hyper Dungeon Crawler</a></td>
+<td>62.10%</td>
+<td data-sort="122">122</td>
+<td data-sort="0">0</td>
+<td data-sort="4">4</td>
+</tr>
+<tr class="app" data-appid="1197690" data-cache="1610994574">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1197690/">Of Mist and Shadows</a></td>
+<td data-sort="-1" class="muted">-</td>
+<td data-sort="116">116</td>
+<td data-sort="0">0</td>
+<td data-sort="0">0</td>
+</tr>
+<tr class="app" data-appid="1222550" data-cache="1597976076">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1222550/">Mercury Prime</a></td>
+<td data-sort="-1" class="muted">-</td>
+<td data-sort="115">115</td>
+<td data-sort="0">0</td>
+<td data-sort="0">0</td>
+</tr>
+<tr class="app" data-appid="1523220" data-cache="1656332409">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1523220/">Overpower</a></td>
+<td>54.17%</td>
+<td data-sort="112">112</td>
+<td data-sort="0">0</td>
+<td data-sort="4">4</td>
+</tr>
+<tr class="app" data-appid="1378870" data-cache="1640624664">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1378870/">In the House of Silence</a></td>
+<td>60.28%</td>
+<td data-sort="111">111</td>
+<td data-sort="0">0</td>
+<td data-sort="4">4</td>
+</tr>
+<tr class="app" data-appid="1598750" data-cache="1641624168">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1598750/">魔法与高塔</a></td>
+<td>78.69%</td>
+<td data-sort="108">108</td>
+<td data-sort="0">0</td>
+<td data-sort="5">5</td>
+</tr>
+<tr class="app" data-appid="1183840" data-cache="1641917547">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1183840/">Dungeon of Rikka</a></td>
+<td>75.86%</td>
+<td data-sort="104">104</td>
+<td data-sort="0">0</td>
+<td data-sort="3">3</td>
+</tr>
+<tr class="app" data-appid="740240" data-cache="1656332395">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/740240/">Snake Eyes Dungeon</a></td>
+<td>50.00%</td>
+<td data-sort="101">101</td>
+<td data-sort="0">0</td>
+<td data-sort="9">9</td>
+</tr>
+<tr class="app" data-appid="1552260" data-cache="1633380647">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1552260/">Apsis Online</a></td>
+<td data-sort="-1" class="muted">-</td>
+<td data-sort="97">97</td>
+<td data-sort="0">0</td>
+<td data-sort="0">0</td>
+</tr>
+<tr class="app" data-appid="1653980" data-cache="1651994180">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1653980/">Goblin Town</a></td>
+<td>56.32%</td>
+<td data-sort="95">95</td>
+<td data-sort="0">0</td>
+<td data-sort="6">6</td>
+</tr>
+<tr class="app" data-appid="1861940" data-cache="1654435845">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1861940/">Monsters and Weapons</a></td>
+<td>65.93%</td>
+<td data-sort="93">93</td>
+<td data-sort="0">0</td>
+<td data-sort="15">15</td>
+</tr>
+<tr class="app" data-appid="1952930" data-cache="1654499348">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1952930/">Soul Wargame</a></td>
+<td data-sort="-1" class="muted">-</td>
+<td data-sort="92">92</td>
+<td data-sort="0">0</td>
+<td data-sort="0">0</td>
+</tr>
+<tr class="app" data-appid="1457690" data-cache="1653917185">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1457690/">Dwarves &amp; Dungeons</a></td>
+<td>73.93%</td>
+<td data-sort="88">88</td>
+<td data-sort="0">0</td>
+<td data-sort="8">8</td>
+</tr>
+<tr class="app" data-appid="1625260" data-cache="1652084408">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1625260/">中国象棋-残局大师</a></td>
+<td>59.37%</td>
+<td data-sort="86">86</td>
+<td data-sort="0">0</td>
+<td data-sort="25">25</td>
+</tr>
+<tr class="app" data-appid="1361020" data-cache="1620548250">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1361020/">Living the Nightmare</a></td>
+<td>76.90%</td>
+<td data-sort="83">83</td>
+<td data-sort="0">0</td>
+<td data-sort="3">3</td>
+</tr>
+<tr class="app" data-appid="1688320" data-cache="1651426863">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1688320/">OneBit Adventure</a></td>
+<td data-sort="-1" class="muted">-</td>
+<td data-sort="82">82</td>
+<td data-sort="0">0</td>
+<td data-sort="0">0</td>
+</tr>
+<tr class="app" data-appid="1681460" data-cache="1651767323">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1681460/">Dark Edges</a></td>
+<td data-sort="-1" class="muted">-</td>
+<td data-sort="80">80</td>
+<td data-sort="0">0</td>
+<td data-sort="0">0</td>
+</tr>
+<tr class="app" data-appid="507360" data-cache="1651031935">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/507360/">The Wizard&#039;s Lair</a></td>
+<td>48.11%</td>
+<td data-sort="78">78</td>
+<td data-sort="0">0</td>
+<td data-sort="2034">2,034</td>
+</tr>
+<tr class="app" data-appid="1608460" data-cache="1626317423">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1608460/">青之镇物语</a></td>
+<td>59.60%</td>
+<td data-sort="77">77</td>
+<td data-sort="0">0</td>
+<td data-sort="3">3</td>
+</tr>
+<tr class="app" data-appid="1861090" data-cache="1654827113">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1861090/">Dire Destiny : Time Travel</a></td>
+<td data-sort="-1" class="muted">-</td>
+<td data-sort="75">75</td>
+<td data-sort="0">0</td>
+<td data-sort="0">0</td>
+</tr>
+<tr class="app" data-appid="1966910" data-cache="1654830376">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1966910/">It&#039;s Hard Being A Dog</a></td>
+<td>68.97%</td>
+<td data-sort="74">74</td>
+<td data-sort="0">0</td>
+<td data-sort="7">7</td>
+</tr>
+<tr class="app" data-appid="1055950" data-cache="1651024806">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1055950/">Feels</a></td>
+<td>76.90%</td>
+<td data-sort="71">71</td>
+<td data-sort="0">0</td>
+<td data-sort="2">2</td>
+</tr>
+<tr class="app" data-appid="1344210" data-cache="1654548115">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1344210/">Mysteries Of Darkness</a></td>
+<td>64.78%</td>
+<td data-sort="68">68</td>
+<td data-sort="0">0</td>
+<td data-sort="7">7</td>
+</tr>
+<tr class="app" data-appid="1680050" data-cache="1651767448">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1680050/">DarkFighter</a></td>
+<td>64.76%</td>
+<td data-sort="62">62</td>
+<td data-sort="0">0</td>
+<td data-sort="6">6</td>
+</tr>
+<tr class="app" data-appid="1602030" data-cache="1655733820">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1602030/">MegaBattle</a></td>
+<td data-sort="-1" class="muted">-</td>
+<td data-sort="62">62</td>
+<td data-sort="0">0</td>
+<td data-sort="0">0</td>
+</tr>
+<tr class="app" data-appid="1603590" data-cache="1652317597">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1603590/">My Cousin the Rogue</a></td>
+<td data-sort="-1" class="muted">-</td>
+<td data-sort="59">59</td>
+<td data-sort="0">0</td>
+<td data-sort="0">0</td>
+</tr>
+<tr class="app" data-appid="1807260" data-cache="1655009713">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1807260/">魔界堕ちのラズリエル -Lazriel the Demon&#039;s Fall-</a></td>
+<td data-sort="-1" class="muted">-</td>
+<td data-sort="57">57</td>
+<td data-sort="0">0</td>
+<td data-sort="0">0</td>
+</tr>
+<tr class="app" data-appid="1584520" data-cache="1637941911">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1584520/">Monster Dungeon</a></td>
+<td data-sort="-1" class="muted">-</td>
+<td data-sort="51">51</td>
+<td data-sort="0">0</td>
+<td data-sort="0">0</td>
+</tr>
+<tr class="app" data-appid="1859870" data-cache="1656178751">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1859870/">执剑九霄</a></td>
+<td>44.31%</td>
+<td data-sort="49">49</td>
+<td data-sort="0">0</td>
+<td data-sort="3">3</td>
+</tr>
+<tr class="app" data-appid="1409310" data-cache="1613749195">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1409310/">The Spiral Labyrinth</a></td>
+<td>70.84%</td>
+<td data-sort="49">49</td>
+<td data-sort="0">0</td>
+<td data-sort="2">2</td>
+</tr>
+<tr class="app" data-appid="1886960" data-cache="1654661337">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1886960/">I HUMAN MACHINE</a></td>
+<td data-sort="-1" class="muted">-</td>
+<td data-sort="45">45</td>
+<td data-sort="0">0</td>
+<td data-sort="1">1</td>
+</tr>
+<tr class="app" data-appid="1694320" data-cache="1632648819">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1694320/">Nilia</a></td>
+<td>64.08%</td>
+<td data-sort="44">44</td>
+<td data-sort="0">0</td>
+<td data-sort="2">2</td>
+</tr>
+<tr class="app" data-appid="1923070" data-cache="1655474752">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1923070/">Deadland 4000</a></td>
+<td data-sort="-1" class="muted">-</td>
+<td data-sort="43">43</td>
+<td data-sort="0">0</td>
+<td data-sort="0">0</td>
+</tr>
+<tr class="app" data-appid="1655210" data-cache="1627266922">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1655210/">明明如月</a></td>
+<td>50.00%</td>
+<td data-sort="43">43</td>
+<td data-sort="0">0</td>
+<td data-sort="3">3</td>
+</tr>
+<tr class="app" data-appid="1724670" data-cache="1656332417">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1724670/">明途之境</a></td>
+<td>64.08%</td>
+<td data-sort="40">40</td>
+<td data-sort="0">0</td>
+<td data-sort="4">4</td>
+</tr>
+<tr class="app" data-appid="1537430" data-cache="1654932379">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1537430/">Mask Up</a></td>
+<td>75.71%</td>
+<td data-sort="38">38</td>
+<td data-sort="0">0</td>
+<td data-sort="4">4</td>
+</tr>
+<tr class="app" data-appid="1534480" data-cache="1643991603">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1534480/">CELLAR | Roguelike + Quest</a></td>
+<td>64.78%</td>
+<td data-sort="36">36</td>
+<td data-sort="0">0</td>
+<td data-sort="2">2</td>
+</tr>
+<tr class="app" data-appid="1792070" data-cache="1642658869">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1792070/">The Faded - Chapter 1 - The Perish Forest Demo</a></td>
+<td>40.58%</td>
+<td data-sort="33">33</td>
+<td data-sort="0">0</td>
+<td data-sort="2">2</td>
+</tr>
+<tr class="app" data-appid="1700210" data-cache="1651724108">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1700210/">Universe Conqueror: The Crappy Game</a></td>
+<td data-sort="-1" class="muted">-</td>
+<td data-sort="32">32</td>
+<td data-sort="0">0</td>
+<td data-sort="0">0</td>
+</tr>
+<tr class="app" data-appid="1973800" data-cache="1655828944">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1973800/">出发吧冒险家</a></td>
+<td>55.69%</td>
+<td data-sort="31">31</td>
+<td data-sort="0">0</td>
+<td data-sort="4">4</td>
+</tr>
+<tr class="app" data-appid="1161790" data-cache="1637841889">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1161790/">Monster Arena</a></td>
+<td data-sort="-1" class="muted">-</td>
+<td data-sort="31">31</td>
+<td data-sort="0">0</td>
+<td data-sort="0">0</td>
+</tr>
+<tr class="app" data-appid="1764840" data-cache="1651155693">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1764840/">Tzakol in Exile</a></td>
+<td data-sort="-1" class="muted">-</td>
+<td data-sort="30">30</td>
+<td data-sort="0">0</td>
+<td data-sort="0">0</td>
+</tr>
+<tr class="app" data-appid="1408410" data-cache="1651752909">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1408410/">Eyeb</a></td>
+<td>68.15%</td>
+<td data-sort="27">27</td>
+<td data-sort="0">0</td>
+<td data-sort="2">2</td>
+</tr>
+<tr class="app" data-appid="1823400" data-cache="1653810691">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1823400/">斗士 Fighter</a></td>
+<td data-sort="-1" class="muted">-</td>
+<td data-sort="25">25</td>
+<td data-sort="0">0</td>
+<td data-sort="1">1</td>
+</tr>
+<tr class="app" data-appid="1821530" data-cache="1651752914">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1821530/">Break Through The Illusion</a></td>
+<td>64.08%</td>
+<td data-sort="24">24</td>
+<td data-sort="0">0</td>
+<td data-sort="1">1</td>
+</tr>
+<tr class="app" data-appid="982920" data-cache="1654012289">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/982920/">HammerBorn: Tears Of Mani</a></td>
+<td>40.58%</td>
+<td data-sort="24">24</td>
+<td data-sort="0">0</td>
+<td data-sort="1">1</td>
+</tr>
+<tr class="app" data-appid="1789340" data-cache="1656018273">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1789340/">Evil&#039;s Den</a></td>
+
+<td data-sort="-1" class="muted">-</td>
+<td data-sort="23">23</td>
+<td data-sort="0">0</td>
+<td data-sort="0">0</td>
+</tr>
+<tr class="app" data-appid="1640790" data-cache="1654259052">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1640790/">Covenanted: the Devil&#039;s Trap</a></td>
+<td data-sort="-1" class="muted">-</td>
+<td data-sort="23">23</td>
+<td data-sort="0">0</td>
+<td data-sort="0">0</td>
+</tr>
+<tr class="app" data-appid="1368230" data-cache="1656332406">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1368230/">Patient Zero</a></td>
+<td data-sort="-1" class="muted">-</td>
+<td data-sort="23">23</td>
+<td data-sort="0">0</td>
+<td data-sort="0">0</td>
+</tr>
+<tr class="app" data-appid="1886700" data-cache="1652494186">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1886700/">东方魔法书学院 touhou magic book academy</a></td>
+<td data-sort="-1" class="muted">-</td>
+<td data-sort="20">20</td>
+<td data-sort="0">0</td>
+<td data-sort="2">2</td>
+</tr>
+<tr class="app" data-appid="2005000" data-cache="1656332420">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/2005000/">Cool Game</a></td>
+<td>45.83%</td>
+<td data-sort="16">16</td>
+<td data-sort="0">0</td>
+<td data-sort="3">3</td>
+</tr>
+<tr class="app" data-appid="1422810" data-cache="1615190687">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1422810/">Adventure Minesweeper</a></td>
+<td>54.17%</td>
+<td data-sort="16">16</td>
+<td data-sort="0">0</td>
+<td data-sort="2">2</td>
+</tr>
+<tr class="app" data-appid="1750910" data-cache="1654897403">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1750910/">Dose Response</a></td>
+<td data-sort="-1" class="muted">-</td>
+<td data-sort="12">12</td>
+<td data-sort="0">0</td>
+<td data-sort="0">0</td>
+</tr>
+<tr class="app" data-appid="1626010" data-cache="1623258978">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1626010/">The King&#039;s Cards</a></td>
+<td data-sort="-1" class="muted">-</td>
+<td data-sort="11">11</td>
+<td data-sort="0">0</td>
+<td data-sort="1">1</td>
+</tr>
+<tr class="app" data-appid="2008050" data-cache="1655926021">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/2008050/">Right and Down</a></td>
+<td data-sort="-1" class="muted">-</td>
+<td data-sort="10">10</td>
+<td data-sort="0">0</td>
+<td data-sort="0">0</td>
+</tr>
+<tr class="app" data-appid="1814220" data-cache="1646163290">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1814220/">Spooky Paths</a></td>
+<td data-sort="-1" class="muted">-</td>
+<td data-sort="10">10</td>
+<td data-sort="0">0</td>
+<td data-sort="0">0</td>
+</tr>
+<tr class="app" data-appid="1922730" data-cache="1655395076">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1922730/">The Original Wizard</a></td>
+<td data-sort="-1" class="muted">-</td>
+<td data-sort="9">9</td>
+<td data-sort="0">0</td>
+<td data-sort="0">0</td>
+</tr>
+<tr class="app" data-appid="1629230" data-cache="1651767321">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1629230/">TileHunter</a></td>
+<td data-sort="-1" class="muted">-</td>
+<td data-sort="9">9</td>
+<td data-sort="0">0</td>
+<td data-sort="0">0</td>
+</tr>
+<tr class="app" data-appid="1536110" data-cache="1651767319">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1536110/">Pixel Combat</a></td>
+<td data-sort="-1" class="muted">-</td>
+<td data-sort="9">9</td>
+<td data-sort="0">0</td>
+<td data-sort="0">0</td>
+</tr>
+<tr class="app" data-appid="1763650" data-cache="1656332417">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1763650/">Clarice Clairvoyage</a></td>
+<td data-sort="-1" class="muted">-</td>
+<td data-sort="8">8</td>
+<td data-sort="0">0</td>
+<td data-sort="0">0</td>
+</tr>
+<tr class="app" data-appid="1449960" data-cache="1634476878">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1449960/">Crazy Rabbit AntiLogic</a></td>
+<td data-sort="-1" class="muted">-</td>
+<td data-sort="8">8</td>
+<td data-sort="0">0</td>
+<td data-sort="2">2</td>
+</tr>
+<tr class="app" data-appid="2011540" data-cache="1656413229">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/2011540/">Blue Star Mobile Team</a></td>
+<td data-sort="-1" class="muted">-</td>
+<td data-sort="7">7</td>
+<td data-sort="0">0</td>
+<td data-sort="1">1</td>
+</tr>
+<tr class="app" data-appid="1733140" data-cache="1646447709">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1733140/">pbk</a></td>
+<td>59.42%</td>
+<td data-sort="7">7</td>
+<td data-sort="0">0</td>
+<td data-sort="1">1</td>
+</tr>
+<tr class="app" data-appid="1861470" data-cache="1643088991">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1861470/">Ballad of Ba&#039;al</a></td>
+<td data-sort="-1" class="muted">-</td>
+<td data-sort="6">6</td>
+<td data-sort="0">0</td>
+<td data-sort="0">0</td>
+</tr>
+<tr class="app" data-appid="2008120" data-cache="1654496263">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/2008120/">the Binding of Survivors</a></td>
+<td data-sort="-1" class="muted">-</td>
+<td data-sort="4">4</td>
+<td data-sort="0">0</td>
+<td data-sort="0">0</td>
+</tr>
+<tr class="app" data-appid="1962940" data-cache="1654295782">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1962940/">Pestilent Hunters</a></td>
+<td data-sort="-1" class="muted">-</td>
+<td data-sort="4">4</td>
+<td data-sort="0">0</td>
+<td data-sort="0">0</td>
+</tr>
+<tr class="app" data-appid="1900630" data-cache="1648756894">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1900630/">SHADOWS IN THE DARK</a></td>
+<td data-sort="-1" class="muted">-</td>
+<td data-sort="3">3</td>
+<td data-sort="0">0</td>
+<td data-sort="0">0</td>
+</tr>
+<tr class="app" data-appid="1583330" data-cache="1655205987">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1583330/">GRAAG</a></td>
+<td data-sort="-1" class="muted">-</td>
+<td data-sort="3">3</td>
+<td data-sort="0">0</td>
+<td data-sort="0">0</td>
+</tr>
+<tr class="app" data-appid="1957620" data-cache="1656397606">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1957620/">Restart your life Adventures of Tylenol</a></td>
+<td data-sort="-1" class="muted">-</td>
+<td data-sort="2">2</td>
+<td data-sort="0">0</td>
+<td data-sort="0">0</td>
+</tr>
+<tr class="app" data-appid="1440600" data-cache="1623781147">
+<td></td>
+<td class="applogo text-left">
+<img src="/static/img/applogo.svg" alt="">
+</td>
+<td class="text-left"><a href="/app/1440600/">Rogue Empire - Dark Heroes</a></td>
+<td>72.17%</td>
+<td data-sort="0">0</td>
+<td data-sort="0">0</td>
+<td data-sort="0">0</td>
+</tr>
+</tbody>
+</table>
+</div>
+<a href="/tag/454187/?all" rel="nofollow">View all apps without limiting</a> <i>(requires to be signed in)</i>
+</div>
+<script nonce="LGL087qmdNSyj85MUigBlPANuEQ=" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" src="/static/js/vendor/jquery.js?v=f3de1813a4160f92"></script><script nonce="LGL087qmdNSyj85MUigBlPANuEQ=" integrity="sha512-oITZn941IEEDKmwUX2xC2US069FklwgAEOIedJxrqpXyZ/klrUmOwk1EHumm4RJsW9mvoEAzjbwQ+TTM79myYQ==" src="/static/js/vendor/dataTables.js?v=a084d99fde352041"></script>
+<script nonce="LGL087qmdNSyj85MUigBlPANuEQ=">(function()
+{
+var cdnUrl = $( document.body ).data( 'steam-cdn' );
+$( '#table-apps' ).DataTable({
+orderClasses: false,
+autoWidth: false,
+pageLength: 100,
+stripeClasses: [],
+lengthMenu:
+[
+[ 25, 50, 100, 250, 1000, 5000, -1 ],
+[ 25, 50, 100, 250, '1K', '5K', 'All (slow)' ]
+],
+initComplete: function( )
+{
+$( this )
+.find( 'tfoot' ).remove().end()
+.find( 'tbody' ).prop( 'hidden', false );
+},
+rowCallback: function( row )
+{
+row = $( row );
+if( row.data( 'loaded' ) )
+{
+return;
+}
+row
+.data( 'loaded', true )
+.find( '.applogo img' )
+.one( 'error', function()
+{
+$( this ).attr( 'src', '/static/img/applogo.svg' );
+} )
+.attr( 'src', cdnUrl + 'steam/apps/' + row.data( 'appid' ) + '/capsule_sm_120.jpg?t=' + row.data( 'cache' ) );
+}
+});
+}());
+</script>
+</div>
+<a href="/donate/" class="welding-torch hide-small">
+<span>SteamDB has been running ad-free since 2012.<br><b>Find out how you can contribute.</b></span>
+<svg version="1.1" width="32" height="32" viewBox="0 0 16 16" class="octicon octicon-chevron-right" aria-hidden="true"><path fill-rule="evenodd" d="M6.22 3.22a.75.75 0 011.06 0l4.25 4.25a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06-1.06L9.94 8 6.22 4.28a.75.75 0 010-1.06z"></path></svg>
+</a>
+<div class="footer" role="contentinfo" id="steamdb-org" itemscope itemtype="http://schema.org/Organization" itemprop="publisher">
+<meta itemprop="name" content="SteamDB">
+<meta itemprop="url" content="https://steamdb.info/">
+<span itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+<meta itemprop="url" content="https://steamdb.info/static/logos/512px.png">
+<meta itemprop="width" content="512">
+<meta itemprop="height" content="512">
+</span>
+<div class="footer-container">
+<div class="footer-menu hide-small">
+<ul>
+<li class="navigation-heading"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-info" aria-hidden="true"><path fill-rule="evenodd" d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm6.5-.25A.75.75 0 017.25 7h1a.75.75 0 01.75.75v2.75h.25a.75.75 0 010 1.5h-2a.75.75 0 010-1.5h.25v-2h-.25a.75.75 0 01-.75-.75zM8 6a1 1 0 100-2 1 1 0 000 2z"></path></svg> About</li>
+<li><a href="/blog/">Blog</a></li>
+<li><a href="/discord/">Discord</a></li>
+<li><a href="/faq/">FAQ &amp; help</a></li>
+<li><a href="/donate/">Donate &amp; contribute</a></li>
+<li><a href="/extension/">Browser extension</a></li>
+</ul>
+<ul>
+<li class="navigation-heading"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-search" aria-hidden="true"><path fill-rule="evenodd" d="M11.5 7a4.499 4.499 0 11-8.998 0A4.499 4.499 0 0111.5 7zm-.82 4.74a6 6 0 111.06-1.06l3.04 3.04a.75.75 0 11-1.06 1.06l-3.04-3.04z"></path></svg> Tools</li>
+<li><a href="/sales/">Sales</a></li>
+<li><a href="/graph/">Charts</a></li>
+<li><a href="/calculator/">Calculator</a></li>
+<li><a href="/patchnotes/">Patch notes</a></li>
+<li><a href="/search/">Search</a></li>
+<li><a href="/instantsearch/">Instant search</a></li>
+<li><a href="/sales/history/">When is next sale?</a></li>
+</ul>
+<ul>
+<li class="navigation-heading"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-sync" aria-hidden="true"><path fill-rule="evenodd" d="M8 2.5a5.487 5.487 0 00-4.131 1.869l1.204 1.204A.25.25 0 014.896 6H1.25A.25.25 0 011 5.75V2.104a.25.25 0 01.427-.177l1.38 1.38A7.001 7.001 0 0114.95 7.16a.75.75 0 11-1.49.178A5.501 5.501 0 008 2.5zM1.705 8.005a.75.75 0 01.834.656 5.501 5.501 0 009.592 2.97l-1.204-1.204a.25.25 0 01.177-.427h3.646a.25.25 0 01.25.25v3.646a.25.25 0 01-.427.177l-1.38-1.38A7.001 7.001 0 011.05 8.84a.75.75 0 01.656-.834z"></path></svg> Tracking</li>
+<li><a href="/apps/">Apps</a></li>
+<li><a href="/subs/">Packages</a></li>
+<li><a href="/bundles/">Bundles</a></li>
+<li><a href="/history/">History</a></li>
+<li><a href="/pricechanges/">Price changes</a></li>
+<li><a href="/upcoming/free/">Free promotions</a></li>
+</ul>
+<ul>
+<li class="navigation-heading"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-database" aria-hidden="true"><path fill-rule="evenodd" d="M2.5 3.5c0-.133.058-.318.282-.55.227-.237.592-.484 1.1-.708C4.899 1.795 6.354 1.5 8 1.5c1.647 0 3.102.295 4.117.742.51.224.874.47 1.101.707.224.233.282.418.282.551 0 .133-.058.318-.282.55-.227.237-.592.484-1.1.708C11.101 5.205 9.646 5.5 8 5.5c-1.647 0-3.102-.295-4.117-.742-.51-.224-.874-.47-1.101-.707-.224-.233-.282-.418-.282-.551zM1 3.5c0-.626.292-1.165.7-1.59.406-.422.956-.767 1.579-1.041C4.525.32 6.195 0 8 0c1.805 0 3.475.32 4.722.869.622.274 1.172.62 1.578 1.04.408.426.7.965.7 1.591v9c0 .626-.292 1.165-.7 1.59-.406.422-.956.767-1.579 1.041C11.476 15.68 9.806 16 8 16c-1.805 0-3.475-.32-4.721-.869-.623-.274-1.173-.62-1.579-1.04-.408-.426-.7-.965-.7-1.591v-9zM2.5 8V5.724c.241.15.503.286.779.407C4.525 6.68 6.195 7 8 7c1.805 0 3.475-.32 4.722-.869.275-.121.537-.257.778-.407V8c0 .133-.058.318-.282.55-.227.237-.592.484-1.1.708C11.101 9.705 9.646 10 8 10c-1.647 0-3.102-.295-4.117-.742-.51-.224-.874-.47-1.101-.707C2.558 8.318 2.5 8.133 2.5 8zm0 2.225V12.5c0 .133.058.318.282.55.227.237.592.484 1.1.708 1.016.447 2.471.742 4.118.742 1.647 0 3.102-.295 4.117-.742.51-.224.874-.47 1.101-.707.224-.233.282-.418.282-.551v-2.275c-.241.15-.503.285-.778.406-1.247.549-2.917.869-4.722.869-1.805 0-3.475-.32-4.721-.869a6.236 6.236 0 01-.779-.406z"></path></svg> Database</li>
+<li><a href="/tags/">User tags</a></li>
+<li><a href="/tech/">Technologies &amp; built with</a></li>
+<li><a href="/upcoming/">Upcoming releases</a></li>
+<li><a href="/upcoming/mostfollowed/">Most followed upcoming</a></li>
+<li><a href="/calendar/">Release calendar</a></li>
+<li><a href="/stats/releases/">Game releases by year</a></li>
+<li><a href="/badges/">Profile badges</a></li>
+</ul>
+<ul>
+<li class="navigation-heading"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-number" aria-hidden="true"><path fill-rule="evenodd" d="M5.604.089A.75.75 0 016 .75v4.77h.711a.75.75 0 110 1.5H3.759a.75.75 0 110-1.5H4.5V2.15l-.334.223a.75.75 0 01-.832-1.248l1.5-1a.75.75 0 01.77-.037zM9 4.75A.75.75 0 019.75 4h4a.75.75 0 01.53 1.28l-1.89 1.892c.312.076.604.18.867.319.742.391 1.244 1.063 1.244 2.005 0 .653-.231 1.208-.629 1.627-.386.408-.894.653-1.408.777-1.01.243-2.225.063-3.124-.527a.75.75 0 01.822-1.254c.534.35 1.32.474 1.951.322.306-.073.53-.201.67-.349.129-.136.218-.32.218-.596 0-.308-.123-.509-.444-.678-.373-.197-.98-.318-1.806-.318a.75.75 0 01-.53-1.28l1.72-1.72H9.75A.75.75 0 019 4.75zm-3.587 5.763c-.35-.05-.77.113-.983.572a.75.75 0 11-1.36-.632c.508-1.094 1.589-1.565 2.558-1.425 1 .145 1.872.945 1.872 2.222 0 1.433-1.088 2.192-1.79 2.681-.308.216-.571.397-.772.573H7a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75c0-.69.3-1.211.67-1.61.348-.372.8-.676 1.15-.92.8-.56 1.18-.904 1.18-1.474 0-.473-.267-.69-.587-.737z"></path></svg> Rankings</li>
+<li><a href="/stats/gameratings/">Top rated games</a></li>
+<li><a href="/badge/13/">Top game owners</a></li>
+<li><a href="/stats/toplevels/">Top profile levels</a></li>
+<li><a href="/stats/globaltopsellers/">Top selling games</a></li>
+<li><a href="/topsellers/">Top selling games last week</a></li>
+<li><a href="/stats/mostfollowed/">Most followed games</a></li>
+<li><a href="/stats/mostwished/">Most wishlisted games</a></li>
+</ul>
+<ul>
+<li class="navigation-heading"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-person" aria-hidden="true"><path fill-rule="evenodd" d="M10.5 5a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0zm.061 3.073a4 4 0 10-5.123 0 6.004 6.004 0 00-3.431 5.142.75.75 0 001.498.07 4.5 4.5 0 018.99 0 .75.75 0 101.498-.07 6.005 6.005 0 00-3.432-5.142z"></path></svg> Account</li>
+<li><a href="/login/?page=tag%2F454187" rel="nofollow">Sign in via Steam</a></li>
+<li><a href="/freepackages/">Free packages</a></li>
+<li>&nbsp;</li>
+<li><a href="https://steamstat.us/">Steam Status</a></li>
+<li><a href="https://steamapi.xpaw.me/">Steam Web API</a></li>
+</ul>
+</div>
+<div class="footer-copyright">
+<div>
+<p>
+SteamDB is a hobby project and is not affiliated with Valve or Steam. All times on the site are UTC.
+<a href="/faq/#what-steamdb-is-not">Fair use disclaimer</a> &middot;
+<a href="/faq/#privacy">Privacy</a>
+</p>
+<p>Steam and the Steam logo are trademarks of Valve Corporation. All other trademarks are property of their respective owners.</p>
+</div>
+<div class="footer-buttons">
+<a class="btn-social tooltipped tooltipped-n" aria-label="Discord" href="/discord/" rel="nofollow">
+<svg viewBox="0 0 16 16" width="24" height="24" class="btn-social-icon" aria-hidden="true">
+<path d="M13.54 2.9a13.2 13.2 0 00-3.25-1c-.02 0-.04 0-.05.02-.15.25-.3.58-.41.83a12.18 12.18 0 00-3.66 0 8.4 8.4 0 00-.41-.83.05.05 0 00-.05-.02 13.16 13.16 0 00-3.28 1.03 13.5 13.5 0 00-2.34 9.14c1.37 1 2.7 1.61 4 2.02.01 0 .04 0 .05-.02.3-.42.58-.86.82-1.33a.05.05 0 00-.03-.07 8.76 8.76 0 01-1.25-.6.05.05 0 010-.08l.24-.2a.05.05 0 01.05 0 9.46 9.46 0 008.05 0h.05l.25.2c.03.02.02.07 0 .09-.4.23-.82.43-1.26.59a.05.05 0 00-.02.07c.24.47.51.91.81 1.33.02.02.04.03.06.02a13.23 13.23 0 004.02-2.06 13.41 13.41 0 00-2.39-9.12zm-8.2 7.31c-.78 0-1.43-.72-1.43-1.6 0-.9.64-1.62 1.44-1.62.8 0 1.45.73 1.43 1.61 0 .89-.63 1.61-1.43 1.61zm5.32 0c-.79 0-1.43-.72-1.43-1.6 0-.9.63-1.62 1.43-1.62.81 0 1.45.73 1.44 1.61 0 .89-.63 1.61-1.44 1.61z" />
+</svg>
+</a>
+<a class="btn-social tooltipped tooltipped-n" aria-label="Twitter" href="https://twitter.com/intent/follow?screen_name=SteamDB" itemprop="sameAs">
+<svg viewBox="0 0 32 32" width="24" height="24" class="btn-social-icon" aria-hidden="true">
+<path d="M31.993 6.077c-1.177.523-2.44.876-3.77 1.033 1.355-.812 2.396-2.098 2.887-3.63-1.27.75-2.673 1.3-4.168 1.592C25.744 3.797 24.038 3 22.15 3c-3.626 0-6.563 2.938-6.563 6.563 0 .514.057 1.016.17 1.496C10.3 10.784 5.464 8.17 2.226 4.2c-.564.97-.888 2.098-.888 3.3 0 2.28 1.158 4.287 2.918 5.465-1.075-.035-2.087-.33-2.972-.82v.08c0 3.182 2.26 5.835 5.264 6.438-.55.15-1.13.23-1.73.23-.423 0-.833-.04-1.233-.117.834 2.606 3.26 4.504 6.13 4.558-2.245 1.76-5.075 2.81-8.15 2.81-.53 0-1.053-.03-1.566-.09C2.906 27.913 6.356 29 10.063 29c12.072 0 18.675-10 18.675-18.675 0-.284-.008-.568-.02-.85 1.283-.925 2.395-2.08 3.276-3.398z" />
+</svg>
+</a>
+<a class="btn-social tooltipped tooltipped-n" aria-label="GitHub" href="https://github.com/SteamDatabase" itemprop="sameAs">
+<svg viewBox="0 0 16 16" width="24" height="24" class="btn-social-icon" aria-hidden="true">
+<path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+</svg>
+</a>
+<a class="btn-social tooltipped tooltipped-n" aria-label="Steam Group" href="https://steamcommunity.com/groups/steamdb" itemprop="sameAs">
+<svg viewBox="0 0 16 16" width="24" height="24" class="btn-social-icon" aria-hidden="true">
+<path d="M8 0a8 8 0 00-8 7.47c.07.1.13.21.18.32l4.15 1.67a2.2 2.2 0 011.31-.36l1.97-2.8v-.04c0-1.65 1.37-3 3.05-3a3.03 3.03 0 013.05 3 3.03 3.03 0 01-3.12 3l-2.81 1.97c0 .3-.05.6-.17.9a2.25 2.25 0 01-4.23-.37L.4 10.56A8.01 8.01 0 108 0zm2.66 4.27c-1.12 0-2.03.9-2.03 2s.91 1.99 2.03 1.99c1.12 0 2.03-.9 2.03-2s-.9-2-2.03-2zm0 .5c.85 0 1.53.66 1.53 1.49s-.68 1.5-1.53 1.5c-.84 0-1.52-.67-1.52-1.5s.68-1.5 1.52-1.5zM5.57 9.6c-.22 0-.43.04-.62.11l1.02.42c.65.26.95.99.68 1.62-.27.63-1 .93-1.65.67l-1-.4a1.73 1.73 0 003.13-.08c.18-.42.18-.88.01-1.3A1.69 1.69 0 005.57 9.6z"></path>
+</svg>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="js-notifications">
+<noscript>
+<div class="toast-header"><b>Enable JavaScript</b></div>
+<div class="toast-body">For SteamDB to function correctly, JavaScript should be enabled.</div>
+</noscript>
+</div>
+<div id="js-hover" hidden></div>
+<div id="js-screenshots">
+<div class="screenshot-header">
+<span>
+<a href="#" class="screenshot-name"></a>
+</span>
+<span>
+<button type="button" class="btn btn-sm btn-primary screenshot-prev">← Prev</button>
+<span class="screenshot-index"></span>
+<button type="button" class="btn btn-sm btn-primary screenshot-next">Next →</button>
+</span>
+<span>
+<a href="#" target="_blank" rel="noopener" class="btn btn-sm screenshot-open">Open link</a>
+<button type="button" class="btn btn-sm btn-danger screenshot-close">Close<span class="hide-small"> (Esc)</span></button>
+</span>
+</div>
+<div class="screenshot-contain"></div>
+</div>
+<script nonce="LGL087qmdNSyj85MUigBlPANuEQ=" integrity="sha512-cZ7XmQ71sKRsQTDAwGqz2pbhGPDxD9j2fSMNyX/JP9i/2b7oKxeWQF2kjGwNeeokNsd1uz10cadNGsg+YEM4QA==" src="/static/js/footer.js?v=719ed7990ef5b0a4" defer></script><script nonce="LGL087qmdNSyj85MUigBlPANuEQ=" integrity="sha512-RwAMPVnYrejwg22FBSL17nywlvP45yzlgl3MS6zrPg/kwSo0WwQAarUmwsMKdCrrh5YUsF0Dg/rdFnLadITBxA==" src="/static/js/hover.js?v=47000c3d59d8ade8" defer></script><script nonce="LGL087qmdNSyj85MUigBlPANuEQ=" integrity="sha512-1ybGGSXu45WDVLpQVF82WqtnS2bxLx/FPHJTns9Vs3s6fB+Z9IRphuQHYGo6iv2bFbVXVRuQ2xNJLdKPOMw+bw==" src="/static/js/toast.js?v=d726c61925eee395" defer></script>
+</body>
+</html>
