@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-builds the roguelike dataset for use on the grogpodcast
+builds the roguelike dataset for use on the grogpod roguelike podcast  https://grogpod.zone
 """
 
 # import steam_data_science as sds
