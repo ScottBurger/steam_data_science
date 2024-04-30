@@ -51,4 +51,4 @@ for i in rogues_data['name']:
         'Score':score    
      }
     
-    similar_apps = similar_apps.append(temp,ignore_index=True)
+    similar_apps = similar_apps._append(temp,ignore_index=True)
